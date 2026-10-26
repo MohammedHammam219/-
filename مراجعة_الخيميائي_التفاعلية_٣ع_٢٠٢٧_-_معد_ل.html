@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مراجعة الوحدة الأولى – الخيميائي</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;800&family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fb;--card:rgba(255,255,255,.88);--tx:#14213d;--nv:#14213d;--yl:#ffc928;--ok:#12805c;--okb:#d8f5e8;--no:#c62828;--nob:#fde0e0;--bd:#d5dbe8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e1424;--card:rgba(26,36,64,.88);--tx:#eef1fa;--nv:#0a1020;--okb:#103c2e;--nob:#4a1c1c;--bd:#33415f;--ok:#4cd9a0;--no:#ff8a8a}}
+:root[data-theme="dark"]{--bg:#0e1424;--card:rgba(26,36,64,.88);--tx:#eef1fa;--nv:#0a1020;--okb:#103c2e;--nob:#4a1c1c;--bd:#33415f;--ok:#4cd9a0;--no:#ff8a8a}
+html,body{margin:0}body{background:var(--bg);color:var(--tx);font-family:Tajawal,Tahoma,sans-serif;font-size:18px;min-height:100vh}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='280' height='170'><text x='140' y='90' text-anchor='middle' transform='rotate(-25 140 85)' font-family='Cairo,Tahoma,sans-serif' font-size='26' font-weight='bold' fill='%23808080' fill-opacity='.2'>أ / محمد عادل</text></svg>")}
+header{position:relative;z-index:2;background:var(--nv);color:#fff;border-bottom:5px solid var(--yl);padding:14px 16px;text-align:center;font-family:Cairo,sans-serif}
+
+main{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:16px}
+.c{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;margin:12px 0}
+button{font:inherit;font-weight:700;cursor:pointer;border:2px solid var(--bd);background:var(--card);color:var(--tx);border-radius:12px;padding:10px 16px}
+button:focus-visible,a:focus-visible{outline:3px solid var(--yl);outline-offset:2px}
+.big{display:block;width:100%;margin:12px 0;padding:18px;font-family:Cairo,sans-serif;font-size:1.2rem;background:var(--nv);color:#fff;border-color:var(--yl)}
+.pri{background:var(--yl);color:#14213d;border-color:var(--yl)}
+.q{font-family:Cairo,sans-serif;font-weight:600;line-height:1.8}
+.b{display:inline-grid;place-items:center;background:var(--yl);color:#14213d;width:34px;height:34px;border-radius:50%;margin-left:8px;font-weight:800}
+.o{display:block;width:100%;text-align:right;margin:8px 0}
+.o.ok{background:var(--okb);border-color:var(--ok);color:var(--ok)}.o.no{background:var(--nob);border-color:var(--no);color:var(--no)}
+.msg{font-weight:700;margin-top:10px;line-height:1.8}.msg.e{color:var(--no)}.msg.g{color:var(--ok)}
+.row{display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between;margin:12px 0}
+.ans{background:var(--okb);border-radius:10px;padding:12px;margin-top:10px;line-height:1.9}
+.sc{position:sticky;top:0;z-index:3;background:var(--nv);color:#fff;border-radius:10px;padding:8px 14px;display:flex;justify-content:space-between}
+footer{position:relative;z-index:1;text-align:center;padding:16px;font-size:.95rem}footer a{color:inherit;font-weight:700}
+#t{position:fixed;z-index:9;top:35%;left:50%;transform:translateX(-50%);background:var(--yl);color:#14213d;font:800 1.6rem Cairo,sans-serif;padding:18px 26px;border-radius:18px;text-align:center;box-shadow:0 8px 30px #0006;max-width:88vw}
+.s{position:fixed;z-index:8;top:-40px;font-size:2rem;animation:f 4.5s linear forwards;pointer-events:none}
+@keyframes f{to{transform:translateY(110vh) rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.s{animation:none;top:20%}}
+.mp{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.mp button{min-width:46px;height:42px;padding:0 6px}.mp .ok{background:var(--okb);border-color:var(--ok);color:var(--ok)}.mp .no{background:var(--nob);border-color:var(--no);color:var(--no)}.mp .w2{background:#fff3c4;color:#14213d;border-color:var(--yl)}.mp .cur{outline:3px solid var(--yl);outline-offset:1px}summary{cursor:pointer;font-weight:700}
+.ltr{direction:ltr;unicode-bidi:isolate;font-family:Tajawal,Cairo,sans-serif}.eq{text-align:center;margin:6px 0;font-size:1.05rem;font-weight:700}.tw{overflow-x:auto;margin-top:6px}.tb{width:100%;border-collapse:collapse}.tb th,.tb td{border:1px solid var(--bd);padding:8px;text-align:center;line-height:1.8}.tb th{background:var(--nv);color:#fff}.tb td{background:var(--card)}.tb td:first-child{font-weight:700}
+.nt{position:relative;z-index:2;background:#fff3c4;color:#14213d;border-bottom:2px solid var(--yl);padding:10px 16px;text-align:center;font-weight:700;font-size:.95rem;line-height:1.9}
+.stk{margin-top:12px;padding:14px 18px;border-radius:18px;border:3px dashed #e8590c;background:linear-gradient(135deg,#ffe8cc,#ffd6e7);color:#14213d;font:800 1.25rem/1.8 Cairo,sans-serif;text-align:center;transform:rotate(-1deg);box-shadow:0 4px 14px #0003}
+.sk{width:280px;max-width:88%;height:auto;display:block;margin:0 auto;filter:drop-shadow(0 4px 6px #0004);animation:pop .6s cubic-bezier(.2,1.4,.4,1) both}.skw{text-align:center;margin-top:12px}#t{padding:12px 14px}#t .sk{width:320px;max-width:82vw;margin:0 auto}
+@keyframes pop{0%{transform:scale(.2) rotate(-12deg);opacity:0}70%{transform:scale(1.1) rotate(4deg);opacity:1}100%{transform:scale(1) rotate(-1deg);opacity:1}}
+@media (prefers-reduced-motion:reduce){.sk{animation:none}}
+header{display:flex;flex-direction:column;align-items:center;gap:8px;padding:12px 14px}
+header h1{margin:0;font-size:1.05rem;line-height:1.7}
+header img{position:static;transform:none;height:58px;width:auto;max-width:70%;object-fit:contain;border-radius:8px;background:#fff}
+.lst{position:relative;width:100%;max-width:420px;margin:8px auto;aspect-ratio:300/230;border-radius:14px;overflow:hidden;background:linear-gradient(#e8f1fb,#f9fbff);border:1px solid var(--bd)}
+.lst svg{position:absolute;inset:0;width:100%;height:100%}
+.zn{position:absolute;border:2px dashed #8896b3;border-radius:10px;display:flex;align-items:flex-end;justify-content:center;font-size:.68rem;color:#2a3550;font-weight:700;cursor:pointer}
+.zn span{pointer-events:none;background:#fffd;border-radius:6px;padding:0 5px;margin-bottom:2px}
+.zn.hl{border-color:#e8a800;background:#ffc92833}.zn.ov{background:#ffc92888}
+.lbeq{direction:ltr;background:var(--okb);border:2px solid var(--ok);border-radius:12px;padding:8px;font-size:1.1rem}
+.tray{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:8px 0}
+.chip{touch-action:none;user-select:none;-webkit-user-select:none;padding:10px 12px;font-size:.95rem}
+.chip.sel{outline:3px solid var(--yl);background:#fff3c4;color:#14213d}.chip.used{opacity:.4}
+.ghost{position:fixed;z-index:20;pointer-events:none;transform:translate(-50%,-130%);background:var(--yl);color:#14213d;padding:8px 12px;border-radius:12px;font-weight:800;box-shadow:0 6px 18px #0005}
+.lqb{border-top:1px solid var(--bd);padding-top:8px;margin-top:8px}
+.fk{transform-box:fill-box;transform-origin:50% 100%;animation:fk .3s infinite alternate}@keyframes fk{to{transform:scale(.9,1.08)}}
+.gl{animation:gl .15s infinite alternate}@keyframes gl{from{opacity:.5}to{opacity:1}}
+.bb{animation:bb 1.2s linear infinite}@keyframes bb{from{transform:translateY(0);opacity:1}to{transform:translateY(-34px);opacity:0}}
+@media (prefers-reduced-motion:reduce){.fk,.gl,.bb{animation:none}}
+.mv{animation:mv 1.1s ease-in-out infinite alternate}@keyframes mv{from{transform:translate(-50px,0)}to{transform:translate(55px,6px)}}
+.pt{animation:pt 2.4s linear infinite}@keyframes pt{from{transform:translateX(0);opacity:0}15%{opacity:1}85%{opacity:1}to{transform:translateX(40px);opacity:0}}
+.up{animation:up 2.2s linear infinite}@keyframes up{from{transform:translateY(0);opacity:0}20%{opacity:1}to{transform:translateY(-55px);opacity:0}}
+.dr{animation:dr 1s linear infinite}@keyframes dr{from{transform:translateY(0);opacity:1}to{transform:translateY(120px);opacity:0}}
+.dn{animation:dn 1.8s linear infinite}@keyframes dn{from{transform:translateY(0);opacity:0}20%{opacity:1}to{transform:translateY(60px);opacity:0}}
+@media (prefers-reduced-motion:reduce){.mv,.pt,.up,.dr,.dn{animation:none}}
+.wr{color:var(--no);font-weight:800;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:5px}
+.eqx{margin:10px 0}.eqx .eqb{direction:ltr;display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:2px 10px;padding:6px 8px;background:var(--card);border:2px solid var(--yl);border-radius:12px}
+.eqx .weq{direction:rtl;display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-start;gap:2px 10px;padding:4px 8px}
+.eqx .col{display:flex;flex-direction:column;align-items:center;text-align:center}
+.eqx .t{min-height:1.3em;font:800 .82rem/1.3 Tajawal,sans-serif;color:#e8590c;direction:ltr;white-space:nowrap}
+.eqx .weq .t{direction:rtl}
+.eqx .f{font:800 1.1rem/2rem Tajawal,Cairo,sans-serif;white-space:nowrap}
+.eqx .weq .f{font-family:Cairo,Tajawal,sans-serif;font-size:1rem}
+.eqx .n{min-height:1.3em;max-width:112px;font-size:.78rem;line-height:1.35;direction:rtl;opacity:.9}
+.eqx .fw{height:2rem;display:flex;align-items:center}
+.eqx .ar{position:relative;width:54px;height:2px;background:currentColor}
+.eqx .ar::after{content:"";position:absolute;right:-2px;top:-4px;border-left:9px solid currentColor;border-top:5px solid transparent;border-bottom:5px solid transparent}
+.eqx .ar.rv{transform:scaleX(-1)}
+.eqx .grp{display:flex;gap:8px;align-items:flex-start}
+.eqx .weq .n{display:none}
+.eqx .eqb,.eqx .weq{gap:2px 8px}
+.eqx .ar{width:44px}
+.eqx .wl{font-weight:800;font-size:.9rem;margin-top:6px;text-align:center}
+.eqx .eqb,.eqx .weq{display:block;overflow:hidden}.eqx .in{display:flex;flex-wrap:nowrap;width:max-content;margin:0 auto;align-items:flex-start;gap:0 8px}.eqx .weq .in{direction:rtl}
+.exs,.exc,.bm{transform-box:fill-box;transform-origin:center}.exs{animation:exs 1.4s ease-out both}.exc{animation:exc .6s ease-out both}.sp{animation:spk 1.3s ease-out both}.bm{animation:bm 1.6s ease-out both}
+@keyframes exs{0%{transform:scale(.1);opacity:1}45%{transform:scale(1.25);opacity:1}100%{transform:scale(1.6);opacity:0}}@keyframes exc{0%{transform:scale(.2);opacity:1}100%{transform:scale(2.2);opacity:0}}
+@keyframes spk{0%{transform:translate(0,0);opacity:1}100%{transform:translate(var(--x),var(--y));opacity:0}}@keyframes bm{0%{transform:scale(.3);opacity:0}30%{opacity:1}100%{transform:scale(1);opacity:1}}
+@media (prefers-reduced-motion:reduce){.exs,.exc,.sp,.bm{animation:none}.exs,.exc,.sp{opacity:0}}.nvr{flex-wrap:nowrap;align-items:center;gap:8px}.nvr button{flex:none}.dua{flex:1;min-width:0;text-align:center;font:800 .95rem/1.7 Cairo,Tajawal,sans-serif;color:var(--tx)}</style></head><body>
+<div class="nt" role="note">هذا العمل مجهود شخصي خالص للأستاذ/ محمد عادل، وجميع حقوق الملكية الفكرية محفوظة. يُمنع تمامًا تعديل أو إزالة البيانات الشخصية من هذا الملف، ومن يفعل ذلك يتحمل المسؤولية الأخلاقية والشرعية أمام الله عز وجل ولا أسامحه مطلقا.</div>
+<header><img alt="شعار الخيميائي" src="data:image/jpeg;base64,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"><h1>ملزمة الخيميائي – مراجعة الوحدة الأولى (التفاعلات الكيميائية)</h1></header>
+<main id="app"></main>
+<footer><div>صفحة طلاب الخيميائي على الفيس بوك – <a href="https://www.facebook.com/alchemist219?rdid=zlCNsKXGo6OALXu4&amp;share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1DtRo49WCA%2F#" target="_blank" rel="noopener">اضغط هنا للمتابعة</a></div><div style="margin-top:6px">أ / محمد عادل – للتواصل: 01094492563</div></footer>
+<script>
+const M=[
+["يعتبر تفاعل الخارصين مع كبريتات النحاس من تفاعلات:",["الاتحاد المباشر","الانحلال","الإحلال البسيط","الاحتراق"],2],
+["تتفاعل الفلزات النشطة مع الأحماض المخففة ويتكون ... ويتصاعد غاز ...",["ملح الحمض / الأكسجين","أكسيد الفلز / الهيدروجين","ملح الحمض / الهيدروجين","أكسيد الفلز / الأكسجين"],2],
+["يحل فلز الصوديوم محل الفلزات الآتية في محاليل أملاحها ما عدا:",["النحاس","البوتاسيوم","الماغنسيوم","الخارصين"],1],
+["أي العناصر الآتية أكثر نشاطاً كيميائياً؟",["النحاس","الحديد","الماغنسيوم","الكالسيوم"],3],
+["عند إضافة قطعة من الفضة إلى حمض الهيدروكلوريك المخفف:",["يتكون كلوريد الفضة","يتكون أكسيد الفضة","يتكون راسب أبيض","لا يحدث تفاعل"],3],
+["عند نقطة التعادل (NaOH مع HCl) يكون لون دليل اليونيفرسال:",["أحمر","أخضر","أزرق","برتقالي"],1],
+["عند إضافة نترات الفضة إلى كلوريد الصوديوم يتكون راسب ... لونه ...",["نترات الصوديوم / أبيض","كلوريد الفضة / أبيض","كلوريد الصوديوم / أسود","نترات الفضة / أسود"],1],
+["عند تفاعل HCl المخفف مع كربونات الصوديوم ينتج غاز:",["يساعد على الاشتعال","يشتعل بفرقعة","يعكر ماء الجير","لونه بني محمر"],2],
+["في التفاعل Zn → Zn²⁺ + 2e⁻ يعمل الخارصين كـ:",["عامل مؤكسد","عامل مختزل","مادة خاملة","عامل محفز"],1],
+["التفاعل Cl₂ + 2e⁻ → 2Cl⁻ يعتبر:",["انحلالاً","أكسدة","اختزالاً","إحلالاً"],2],
+["يتكون الغاز الطبيعي في المنازل بشكل أساسي من:",["البروبان","البيوتان","الميثان","الإيثيلين"],2],
+["جميع تفاعلات الاحتراق التام للوقود العضوي تصنف على أنها تفاعلات:",["ماصة للحرارة","طاردة للحرارة","إحلال بسيط","تعادل"],1],
+["المادة التي ينتج عن احتراقها غير التام CO والسناج هي:",["أكسيد الماغنسيوم","غاز الميثان","كبريتات النحاس","كلوريد البوتاسيوم"],1],
+["الغاز الذي يستخدم في إطفاء الحرائق لأنه أثقل من الهواء ولا يشتعل:",["الأكسجين","النيتروجين","أول أكسيد الكربون","ثاني أكسيد الكربون"],3],
+["الغاز الذي يذوب في الماء مكوناً حمض الكربونيك هو:",["CO","CO₂","SO₂","NO₂"],1],
+["غاز عديم اللون رائحته خانقة ويذوب في الماء مكوناً حمض الكبريتوز:",["ثاني أكسيد الكبريت","ثاني أكسيد النيتروجين","أول أكسيد الكربون","أكسيد النيتريك"],0],
+["يقوم المحول الحفزي في السيارات بتحويل غاز أول أكسيد الكربون إلى غاز:",["الأكسجين","ثاني أكسيد الكربون","النيتروجين","الهيدروجين"],1],
+["يؤدي حرق قش الأرز إلى تكون دخان كثيف يعرف بـ:",["الضباب الدخاني","السحابة السوداء","الأمطار الحامضية","الاحتباس الحراري"],1],
+["للتخلص من الغازات الحامضية في مداخن المصانع نستخدم رذاذاً من:",["الماء النقي","حمض الكبريتيك","محاليل قلوية","غاز النيتروجين"],2],
+["المادة المسؤولة عن إدمان تدخين السجائر:",["القطران","النيكوتين","بخار الماء","الأكسجين"],1],
+["الغاز الذي إذا تم استنشاقه يقلل قدرة الدم على نقل الأكسجين:",["ثاني أكسيد الكربون","النيتروجين","أول أكسيد الكربون","الأكسجين"],2],
+["عنصر مشع يتسرب إلى الرئتين مع تدخين السجائر:",["اليورانيوم 235","البولونيوم 210","الأكتينيوم 227","الرادون 222"],1],
+["الرمز الكيميائي لغاز الأمونيا المهيج للجهاز التنفسي:",["NO₂","NH₃","HCN","CO"],1],
+["شخص جلس في غرفة مغلقة بجوار صديقه المدخن، فهو يتعرض لتدخين:",["مباشر","سلبي","إلكتروني","تقليدي"],1],
+["الغاز الذي يطلقه التدخين بملايين الأطنان مسبباً الاحتباس الحراري:",["الأكسجين","الهيدروجين","ثاني أكسيد الكربون","النيتروجين"],2],
+["يعتبر النيكوتين مركباً عضوياً تأثيره:",["حمضي","متعادل","قلوي","ليس له تأثير"],2],
+["تتسبب أعقاب (فلاتر) السجائر بشكل رئيسي في تلوث:",["الهواء فقط","الماء فقط","التربة فقط","الماء والتربة"],3]];
+const E=[
+["علل: تتحرك قطعة الصوديوم بسرعة عند وضعها في حوض به ماء؟","بسبب تفاعل الصوديوم بشدة مع الماء وتصاعد فقاعات غازية (هيدروجين) تشتعل بفرقعة."],
+["علل: يطفو الصوديوم فوق سطح الماء؟","لأن كثافة الصوديوم أقل من كثافة الماء."],
+["علل: استخدام الماء في إطفاء حرائق الصوديوم خطأ كارثي؟","لأن الصوديوم يتفاعل مع الماء بشدة وينتج غاز الهيدروجين الذي يشتعل بفرقعة وتتولد حرارة."],
+["علل: يتفاعل الخارصين والحديد مع HCl المخفف بينما لا يتفاعل النحاس معه؟","لأن الخارصين والحديد يسبقان الهيدروجين في متسلسلة النشاط فيحلان محله، بينما النحاس يلي الهيدروجين فلا يحل محله."],
+["علل: تكون راسب أحمر عند وضع ساق خارصين في محلول كبريتات النحاس؟","لأن الخارصين يسبق النحاس في متسلسلة النشاط فيحل محله ويترسب النحاس الأحمر."],
+["علل: تستخدم كربونات الصوديوم في معالجة الماء العسر؟","لأن أيونات الكالسيوم والماغنسيوم ترتبط بأيونات الكربونات فتكون رواسب صلبة غير ذائبة يسهل التخلص منها."],
+["علل: الأكسدة والاختزال عمليتان متلازمتان؟","لأنهما يحدثان في وقت واحد، وعدد الإلكترونات المفقودة في الأكسدة يساوي عدد الإلكترونات المكتسبة في الاختزال."],
+["ماذا يحدث عند: إضافة محلول نترات الفضة إلى محلول كلوريد الصوديوم؟ مع المعادلة.","يتكون راسب أبيض من كلوريد الفضة (يتحول للبنفسجي بالضوء).\nAgNO₃ + NaCl → NaNO₃ + AgCl↓"],
+["ماذا يحدث عند: احتراق شريط ماغنسيوم في الهواء؟ مع المعادلة.","يحترق بلهب أبيض ساطع ويتكون مسحوق أبيض من أكسيد الماغنسيوم.\n2Mg + O₂ →(Δ) 2MgO"],
+["ماذا يحدث عند: تسخين كربونات الكالسيوم؟ مع المعادلة.","تنحل إلى أكسيد الكالسيوم وثاني أكسيد الكربون.\nCaCO₃ →(Δ) CaO + CO₂↑"],
+["علل: لا تحترق قصاصة الورق المبللة بالماء عند تعريضها للهب شمعة؟","لأن الماء يمتص الحرارة فتصبح درجة حرارة الورقة أقل من درجة الاشتعال."],
+["علل: يظهر لهب موقد بنزن باللون الأصفر أحياناً؟","بسبب الاحتراق غير التام ونقص كمية الأكسجين."],
+["علل: يجب تنظيف فتحات الموقد المنزلي بصورة دورية؟","لدخول كمية وفيرة من الأكسجين وحدوث الاحتراق التام وعدم تكون أول أكسيد الكربون أو السناج."],
+["علل: يعتبر أول أكسيد الكربون خطيراً جداً على صحة الإنسان؟","لأنه غاز سام عديم الرائحة، ويرتبط بالهيموجلوبين أسرع من الأكسجين."],
+["علل: يفضل الغاز الطبيعي على الفحم الحجري في محطات توليد الكهرباء؟","لأنه أقل تلويثاً للبيئة وأقل انبعاثاً للغازات الضارة."],
+["علل: يتغير لون رئتي المدخن من الوردي إلى الداكن؟","بسبب ترسب مادة القطران."],
+["علل: تقل كمية الأكسجين المحمولة في دم المدخن؟","لأن أول أكسيد الكربون يرتبط بالهيموجلوبين أسرع من الأكسجين فيقل الأكسجين المحمول بالدم."],
+["علل: يعاني المدخن من صعوبة بالغة في التوقف عن التدخين؟","لأن النيكوتين يصل إلى الدماغ بسرعة ويسبب شعوراً براحة مؤقتة وتكراره يسبب الإدمان."],
+["علل: يؤدي مرض النفاخ الرئوي إلى صعوبة التنفس؟","لتمزق جدر الحويصلات الهوائية وتحولها إلى تجاويف كبيرة مترهلة فتقل مساحة تبادل الغازات."],
+["علل: التدخين الإلكتروني ليس بديلاً آمناً للتدخين التقليدي؟","لاحتوائه على نسب عالية من النيكوتين تسبب الإدمان واضطرابات الجهاز العصبي."]];
+M.push(...[
+["للتخلص من أيونات الرصاص Pb²⁺ من المياه الجوفية نستخدم فلزاً أنشط لترسيبها، أنسب فلز:",["النحاس Cu","الفضة Ag","الخارصين Zn","الذهب Au"],2],
+["عند إضافة فلز نشط إلى محلول CuSO₄ يختفي اللون الأزرق لأن أيونات Cu²⁺ يحدث لها عملية:",["أكسدة","اختزال","انحلال","تبادل أيوني"],1],
+["التفاعل Fe²⁺ → Fe³⁺ + e⁻ يعبر عن عملية:",["أكسدة","اختزال","انحلال","إحلال"],0],
+["تفاعلات الإحلال المزدوج بين محاليل الأملاح تكون مصحوبة بتكوين:",["فلز","راسب","أكسيد","ملح يذوب في الماء"],1],
+["تلعب ... الموجودة في جانب علبة الكبريت دوراً هاماً في اشتعال عود الثقاب:",["كلورات البوتاسيوم","كبريتيد الأنتيمون","الفوسفور الأحمر","أكسيد الماغنسيوم"],2],
+["يحترق شريط الماغنسيوم بضوء أبيض ساطع مكوناً مسحوقاً أبيض من:",["أكسيد الماغنسيوم","كلوريد البوتاسيوم","كلوريد الماغنسيوم","هيدروكسيد الماغنسيوم"],0],
+["تعتمد فكرة إشعال عود الثقاب على تحويل الطاقة ... إلى طاقة حرارية:",["الكهربية","الضوئية","الميكانيكية","الكيميائية"],2],
+["يؤدي الاحتراق غير التام للهيدروكربونات إلى تصاعد غاز سام هو:",["ثاني أكسيد الكربون","النيتروجين","الهيدروجين","أول أكسيد الكربون"],3],
+["عند ذوبان ناتج احتراق بعض الفلزات في الماء يتكون محلول ... و... ورقة دوار الشمس:",["قلوي / يزرق","قلوي / يحمر","حامضي / يزرق","حامضي / يحمر"],0],
+["غاز لونه بني محمر ذو رائحة نفاذة ينتج عن أكسدة أكسيد النيتريك هو:",["NO","NO₂","SO₂","N₂O"],1],
+["تهدف أجهزة غسل الغازات الحامضية في المصانع إلى معالجة غاز:",["الميثان","أول أكسيد الكربون","ثاني أكسيد الكبريت","النيتروجين"],2],
+["يؤدي نقص كفاءة المحول الحفزي إلى زيادة غاز ... في الهواء الجوي:",["أول أكسيد الكربون","الأكسجين","النيتروجين","الهيدروجين"],0],
+["وظيفة المعادن النفيسة داخل المحول الحفزي بالسيارة:",["عامل مؤكسد","عامل حفاز","وقود بديل","عامل مختزل"],1],
+["مادة لزجة داكنة تسبب سرطان الرئة وتتلف الحويصلات الهوائية:",["النيكوتين","القطران","الرصاص","الرماد"],1],
+["يؤدي النيكوتين ذو النسب المرتفعة في سوائل السجائر الإلكترونية مباشرة إلى:",["حرق الرئتين","تراكم القطران بالشرايين","تغير درجة الحرارة","إدمان كيميائي سريع"],3]]);
+E.push(...[
+["علل: تصنف التفاعلات الكيميائية إلى عدة أنواع رئيسة؟","لتنوع الطرق التي تعيد بها المواد المتفاعلة ترتيب ذراتها وأيوناتها وكسر وتكوين الروابط الكيميائية."],
+["علل: ظهور لون فضي عند تسخين أكسيد الزئبق الأحمر؟","لأنه ينحل بالحرارة إلى زئبق فضي وأكسجين.\n2HgO →(Δ) 2Hg + O₂↑"],
+["علل: تصاعد فقاعات غازية عند وضع شريط ماغنسيوم في HCl المخفف؟","لأن الماغنسيوم يحل محل هيدروجين الحمض فيتصاعد غاز الهيدروجين."],
+["علل: تتكون مادة بيضاء عند احتراق شريط الماغنسيوم في الهواء؟","بسبب اتحاد الماغنسيوم مع أكسجين الهواء مكوناً أكسيد الماغنسيوم الأبيض."],
+["علل: يتفاعل الصوديوم فوراً مع الماء البارد بينما يحتاج الماغنسيوم لماء ساخن؟","لأن الصوديوم يسبق الماغنسيوم في متسلسلة النشاط وأنشط منه."],
+["علل: تفاعل الماغنسيوم مع HCl المخفف أسرع من الخارصين؟","لأن الماغنسيوم يسبق الخارصين في متسلسلة النشاط وأنشط منه."],
+["علل: لا تحل الفضة محل هيدروجين الحمض؟","لأن الفضة تلي الهيدروجين في متسلسلة النشاط وأقل نشاطاً فلا تحل محله."],
+["علل: لا يتفاعل الألومنيوم فوراً مع HCl المخفف؟","لوجود طبقة من أكسيد الألومنيوم Al₂O₃ على سطحه تحتاج فترة حتى تتآكل وتسمح ببدء التفاعل."],
+["علل: قد تفقد الأدوات الفضية بريقها مع الوقت؟","لتفاعلها مع الوسط المحيط وتكون طبقة سوداء من كبريتيد الفضة على سطحها."],
+["علل: يستخدم ورق الألومنيوم لتنظيف الفضة من الطبقة السوداء؟","لأن الألومنيوم أنشط من الفضة فيحل محلها في كبريتيد الفضة ويعيد لمعانها."],
+["علل: يعتبر تفاعل NaOH مع HCl من تفاعلات الإحلال المزدوج؟","لأنه يحدث تبادل بين الأنيونات والكاتيونات لتكوين مركبين جديدين."],
+["علل: حدوث فوران عند تفاعل HCl المخفف مع مسحوق كربونات الصوديوم؟","بسبب تصاعد غاز ثاني أكسيد الكربون CO₂."],
+["علل: تعتبر الفلزات عوامل مختزلة بينما اللافلزات عوامل مؤكسدة؟","لأن الفلزات تميل لفقد الإلكترونات (أكسدة)، واللافلزات تميل لاكتسابها (اختزال)."],
+["علل: يسبب الماء العسر تلف الغسالات وسخانات المياه؟","بسبب تكون تكلسات صلبة داخل الأجهزة والأنابيب تسبب تلفها."],
+["علل: تتكون طبقة سوداء على سلك النحاس عند تعريضه للهب بنزن؟","بسبب اتحاد النحاس مع الأكسجين وتكون أكسيد النحاس الأسود.\n2Cu + O₂ →(Δ) 2CuO"],
+["علل: يجب عدم إطالة النظر إلى وهج احتراق الماغنسيوم؟","لأنه ينتج ضوءاً عالي الشدة مصحوباً بأشعة فوق بنفسجية تؤذي الشبكية."],
+["علل: تفاعل البوتاسيوم مع الماء أشد من تفاعل الصوديوم؟","لأن البوتاسيوم يسبق الصوديوم في متسلسلة النشاط وأكثر نشاطاً منه."],
+["علل: الحرائق لا تشتعل تلقائياً رغم وجود مادة قابلة للاشتعال والأكسجين؟","لأنه يشترط وصول المادة إلى درجة الاشتعال."],
+["علل: يعد البنزين والكحول من المواد الخطرة؟","لأنها مواد ملتهبة سريعة الاشتعال وخطورتها مرتفعة."],
+["علل: اللهب الأزرق في موقد بنزن ذو كفاءة تسخين عالية واقتصادي؟","لأن درجة حرارته مرتفعة وأقل استهلاكاً للغاز."],
+["علل: يعتبر أكسيد الماغنسيوم من الأكاسيد القاعدية وثاني أكسيد الكربون من الحامضية؟","لأن الأول يذوب في الماء مكوناً قلوياً، والثاني يذوب في الماء مكوناً حمضاً."],
+["علل: يجب التوقف عن حرق قش الأرز؟","لأنه يسبب السحابة السوداء ويلوث الهواء."],
+["علل: ضرورة تركيب محول حفزي في السيارات الحديثة؟","لتحويل الغازات السامة إلى غازات أقل ضرراً."],
+["علل: تركيب أجهزة غسل الغازات الحامضية في مداخن المصانع؟","للحد من التلوث وتقليل الأمطار الحامضية والضباب الدخاني."],
+["علل: يزيد الاحتراق غير التام من مخاطر التلوث البيئي؟","لأنه ينتج أول أكسيد الكربون السام والسناج."],
+["علل: يسبب التدخين زيادة فرص الإصابة بالأورام السرطانية بالرئة؟","بسبب تراكم العناصر المشعة التي تلف الحمض النووي DNA في خلايا الرئة."],
+["علل: خطورة التدخين السلبي على غير المدخنين؟","لأنه يعرضهم لنفس مخاطر أمراض القلب والجهاز التنفسي."],
+["علل: تمثل أعقاب السجائر (الفلاتر) خطراً بيئياً على التربة والمياه؟","لأنها تلوث الماء والتربة وتسرب المواد الكيميائية السامة."],
+["علل: يساهم التدخين في زيادة مشكلة الاحتباس الحراري؟","لأنه يزيد نسبة ثاني أكسيد الكربون."]]);
+const T=(s,ok,c)=>[s,["√ صح","× خطأ"],ok?0:1,c];
+M.push(...[
+T("تنحل كربونات الكالسيوم بالحرارة إلى أكسيد الكالسيوم وأكسجين.",0,"ثاني أكسيد الكربون بدلاً من الأكسجين"),
+T("يتفاعل الماغنسيوم مع الماء البارد بسرعة.",0,"الماء الساخن"),
+T("تتم معالجة الماء العسر عن طريق تفاعلات الإحلال البسيط.",0,"الإحلال المزدوج"),
+T("المادة التي تكتسب إلكتروناً أو أكثر أثناء التفاعل تُعد عاملاً مؤكسداً.",1),
+T("درجة الاشتعال هي أقصى درجة حرارة تصل إليها المادة لتبدأ في الاشتعال.",0,"أقل درجة حرارة"),
+T("يحتوي رأس عود الثقاب على مواد قابلة للاشتعال مثل كلورات البوتاسيوم والفوسفور الأحمر.",0,"الفوسفور الأحمر في جانب العلبة، ورأس العود فيه كلورات البوتاسيوم ومسحوق الزجاج أو الرمل"),
+T("الاحتراق التام للميثان ينتج غاز أول أكسيد الكربون السام ومسحوق الكربون.",0,"ينتج ثاني أكسيد الكربون وبخار الماء"),
+T("عند احتراق الغاز الطبيعي في جو يفتقر إلى الأكسجين يميل اللهب إلى الأزرق النقي.",0,"اللون الأصفر أو البرتقالي"),
+T("يطلق الاحتراق التام لكتلة من وقود هيدروكربوني طاقة أكبر من الاحتراق غير التام.",1),
+T("الأكاسيد الناتجة عن احتراق الفلزات تسمى أكاسيد حامضية وتحمر ورقة دوار الشمس.",0,"أكاسيد قاعدية وتزرق ورقة دوار الشمس"),
+T("تحدث السحابة السوداء بسبب احتراق تام نظيف للقش لتوفر كمية كافية من الأكسجين.",0,"احتراق غير تام لعدم توفر كمية كافية من الأكسجين"),
+T("الغاز الطبيعي يسبب تلوثاً أكبر من الفحم الحجري عند الاحتراق.",0,"أقل من الفحم الحجري"),
+T("تتكون مادة القطران نتيجة احتراق الكربوهيدرات والبروتينات الموجودة في التبغ.",1),
+T("يحتوي التبغ على بعض العناصر المعدنية مثل البوتاسيوم والماغنسيوم.",1),
+T("تعتبر أكاسيد النيتروجين من الغازات المهيجة.",1),
+T("يؤدي التدخين إلى اتساع الحويصلات الهوائية وزيادة كفاءتها في تبادل الغازات.",0,"نقص كفاءتها في تبادل الغازات"),
+T("يظهر رماد السيجارة باللون الأبيض لوجود المعادن غير المتطايرة مثل الكالسيوم.",1),
+T("يؤثر النيكوتين على الجهاز الدوري بزيادة ضربات القلب وتصلب الشرايين.",1),
+T("يسبب النيكوتين شعوراً دائماً بالراحة.",0,"شعوراً مؤقتاً بالراحة"),
+T("الدخان المتصاعد من طرف السيجارة أقل خطراً من الذي يستنشقه المدخن.",0,"أكثر خطراً"),
+T("التدخين الإلكتروني وسيلة آمنة لتجنب إدمان التبغ التقليدي.",0,"ليس بديلاً آمناً"),
+T("التدخين السلبي يعرض الشخص لنفس مخاطر أمراض المدخن المباشر.",1),
+T("التدخين عادة يسهل التخلص منها في أي وقت دون مجهود.",0,"يصعب التخلص منها")]);
+E.push(...[
+["ماذا يحدث عند: احتراق شريط من الماغنسيوم في الهواء؟ (مع المعادلة)","يتكون مسحوق أبيض من أكسيد الماغنسيوم.\n2Mg + O₂ →(Δ) 2MgO"],
+["ماذا يحدث عند: احتراق قطعة من الصوف الفولاذي في الهواء؟","يتكون أكسيد الحديد المغناطيسي.\n3Fe + 2O₂ →(Δ) Fe₃O₄"],
+["ماذا يحدث عند: احتراق سلك من النحاس في الهواء؟","تتكون طبقة سوداء من أكسيد النحاس.\n2Cu + O₂ →(Δ) 2CuO"],
+["ماذا يحدث عند: تسخين أكسيد الزئبق الأحمر؟","ينحل بالحرارة إلى زئبق فضي وأكسجين.\n2HgO →(Δ) 2Hg + O₂↑"],
+["ماذا يحدث عند: تسخين كربونات الكالسيوم؟","تنحل إلى أكسيد الكالسيوم وثاني أكسيد الكربون.\nCaCO₃ →(Δ) CaO + CO₂↑"],
+["ماذا يحدث عند: وضع قطعة صغيرة من الصوديوم في حوض به ماء؟","يتكون هيدروكسيد الصوديوم ويتصاعد الهيدروجين (يشتعل بفرقعة) وتتولد حرارة.\n2Na + 2H₂O → 2NaOH + H₂↑ + Heat"],
+["ماذا يحدث عند: إضافة HCl المخفف إلى شريط من الماغنسيوم؟","يتكون كلوريد الماغنسيوم ويتصاعد الهيدروجين.\nMg + 2HCl →(dil.) MgCl₂ + H₂↑"],
+["ماذا يحدث عند: إضافة HCl المخفف إلى قطعة من الخارصين؟","يتكون كلوريد الخارصين ويتصاعد الهيدروجين.\nZn + 2HCl →(dil.) ZnCl₂ + H₂↑"],
+["ماذا يحدث عند: إضافة HCl المخفف إلى قطعة من الحديد؟","يتكون كلوريد الحديد II ويتصاعد الهيدروجين.\nFe + 2HCl →(dil.) FeCl₂ + H₂↑"],
+["ماذا يحدث عند: إضافة HCl المخفف إلى قطعة من النحاس؟","لا يحدث تفاعل (النحاس يلي الهيدروجين في المتسلسلة)."],
+["ماذا يحدث عند: وضع ساق من الخارصين في محلول كبريتات النحاس الزرقاء؟","يتكون كبريتات الخارصين عديمة اللون ويترسب النحاس الأحمر.\nZn + CuSO₄ → ZnSO₄ + Cu↓"],
+["ماذا يحدث عند: إضافة هيدروكسيد الصوديوم إلى حمض الهيدروكلوريك؟ (تفاعل التعادل)","ينتج ملح كلوريد الصوديوم وماء.\nNaOH + HCl → NaCl + H₂O"],
+["ماذا يحدث عند: إضافة كربونات الصوديوم إلى HCl المخفف؟","يتكون كلوريد الصوديوم وماء ويتصاعد ثاني أكسيد الكربون.\nNa₂CO₃ + 2HCl →(dil.) 2NaCl + H₂O + CO₂↑"],
+["ماذا يحدث عند: إضافة نترات الفضة إلى كلوريد الصوديوم؟ (تفاعل الترسيب)","يتكون راسب أبيض من كلوريد الفضة (يتحول للبنفسجي بالضوء).\nAgNO₃ + NaCl → NaNO₃ + AgCl↓"],
+["ماذا يحدث عند: احتراق الكربون (الفحم) مع الأكسجين؟","يتكون ثاني أكسيد الكربون.\nC + O₂ →(Δ) CO₂"],
+["ماذا يحدث عند: الاحتراق التام للميثان في وفرة من الأكسجين؟","يتكون ثاني أكسيد الكربون وبخار ماء وحرارة.\nCH₄ + 2O₂ →(Δ) CO₂ + 2H₂O + heat"],
+["ماذا يحدث عند: الاحتراق غير التام للميثان وينتج أول أكسيد الكربون؟","يتكون أول أكسيد الكربون وبخار ماء وحرارة.\n2CH₄ + 3O₂ →(Δ) 2CO + 4H₂O + heat"],
+["ماذا يحدث عند: الاحتراق غير التام للميثان وينتج السناج؟","يتكون سناج (كربون) وبخار ماء وحرارة.\nCH₄ + O₂ →(Δ) C + 2H₂O + heat"],
+["أكمل: التفاعل الكيميائي هو كسر الروابط في جزيئات المواد المتفاعلة و ______ في جزيئات المواد الناتجة.","تكوين روابط جديدة"],
+["أكمل: ______ لا يحترق بلهب مرئي بل تتكون على سطحه طبقة سوداء من أكسيد النحاس.","النحاس"],
+["أكمل: في متسلسلة النشاط يحل الفلز ______ نشاطاً محل الفلز ______ نشاطاً في محاليل أملاحه.","الأكثر / الأقل"],
+["أكمل: الفلزات التي ______ الهيدروجين في المتسلسلة تحل محله في المحاليل المخففة.","تسبق"],
+["أكمل: تتفاعل الفلزات مع أكسجين الهواء وينتج عنها ______.","أكسيد الفلز"],
+["أكمل: تنحل كربونات الكالسيوم بالتسخين إلى ______ و ______.","أكسيد الكالسيوم وثاني أكسيد الكربون"],
+["أكمل: يتصاعد غاز ______ عند تفاعل الصوديوم مع الماء، وغاز ______ عند تسخين كربونات الكالسيوم.","الهيدروجين / ثاني أكسيد الكربون"],
+["أكمل: تتفاعل الفلزات مع HCl المخفف ويتكون ______ ويتصاعد غاز ______.","ملح الحمض / الهيدروجين"],
+["أكمل: يحل الصوديوم محل هيدروجين الماء ويتكون ______ ويتصاعد غاز ______.","هيدروكسيد الصوديوم / الهيدروجين"],
+["أكمل: عندما يحل الخارصين محل النحاس في محلول أحد مركباته يتكون راسب ______ اللون.","أحمر"],
+["أكمل: تتم الأكسدة عن طريق ______ الإلكترونات، ويتم الاختزال عن طريق ______ الإلكترونات.","فقد / اكتساب"],
+["أكمل: الأكسدة والاختزال عمليتان ______ تحدثان معاً.","متلازمتان"],
+["أكمل: يمكن التخلص من أملاح الكالسيوم والماغنسيوم المسببة لعسر الماء بتفاعلات ______ بإضافة ______ إلى الماء.","الترسيب / كربونات الصوديوم"],
+["أكمل: في الإحلال المزدوج تتبادل ______ و ______ مواضعهما.","الأنيونات والكاتيونات"],
+["أكمل: تفاعلات الإحلال المزدوج بين محاليل الأملاح تكون مصحوبة بتكوين ______.","راسب"],
+["أكمل: عند إضافة دليل اليونيفرسال إلى محلول NaOH القلوي يتحول لونه إلى ______.","البنفسجي"],
+["أكمل: يتصاعد غاز ______ عند تفاعل HCl مع كربونات الصوديوم، وهذا الغاز ______ ماء الجير الرائق.","ثاني أكسيد الكربون / يعكر"],
+["أكمل: عند إضافة AgNO₃ إلى NaCl يتكون راسب أبيض من ______ يتحول للون ______ عند تعرضه للضوء.","كلوريد الفضة / البنفسجي"],
+["صوب ما بين القوسين: عند تسخين أكسيد الزئبق الأحمر يتصاعد غاز [الهيدروجين].","الأكسجين"],
+["صوب ما بين القوسين: تتكون مادة [حمراء] اللون عند احتراق شريط من الماغنسيوم.","بيضاء"],
+["صوب ما بين القوسين: تترتب العناصر في المتسلسلة تنازلياً حسب [كتلتها الذرية].","نشاطها الكيميائي"],
+["صوب ما بين القوسين: يحل الحديد محل [الأكسجين] في الأحماض المخففة.","الهيدروجين"],
+["صوب ما بين القوسين: يطفو الصوديوم فوق الماء لأن كثافته [أكبر] من كثافة الماء.","أقل"],
+["صوب ما بين القوسين: يشتعل غاز [ثاني أكسيد الكربون] بفرقعة عند تقريب شظية مشتعلة.","الهيدروجين"],
+["صوب ما بين القوسين: عند إضافة AgNO₃ إلى NaCl يتكون راسب [أخضر] من كلوريد الفضة.","أبيض"],
+["صوب ما بين القوسين: المادة التي تفقد إلكتروناً تسمى [العامل الحفاز].","العامل المختزل"],
+["صوب ما بين القوسين: الأكسدة والاختزال عمليتان [منفصلتان].","متلازمتان"],
+["صوب ما بين القوسين: الأكسدة عملية تفقد فيها الذرة [بروتوناً] أو أكثر.","إلكتروناً"],
+["صوب ما بين القوسين: تصنف غازات CO وHCN بأنها غازات [مهيجة] للجهاز التنفسي.","سامة"],
+["صوب ما بين القوسين: يحتوي التبغ على البولونيوم 210 وهو عنصر [ثقيل].","مشع"],
+["صوب ما بين القوسين: في النفاخ الرئوي المساحة السطحية لتبادل الغازات [تزداد] بشكل كبير.","تقل"],
+["متنوعة: ماذا تتوقع عند غمر ساق نحاس في محلول نترات الفضة؟ فسر مع المعادلة.","يحل النحاس محل الفضة وتترسب الفضة؛ لأن النحاس يسبق الفضة في المتسلسلة.\nCu + 2AgNO₃ → Cu(NO₃)₂ + 2Ag↓"],
+["متنوعة: اقترح طريقة لاسترجاع النحاس من نفايات CuSO₄ بخردة الحديد: (أ) نوع التفاعل (ب) المعادلة (ج) الملاحظة.","أ) إحلال بسيط.\nب) Fe + CuSO₄ → FeSO₄ + Cu↓\nج) زوال اللون الأزرق وتكون راسب أحمر من النحاس."],
+["متنوعة: إضافة HCl إلى رخام (CaCO₃) فحدث فوران: (أ) نوع التفاعل (ب) المعادلة (ج) الغاز وكيفية التأكد منه.","أ) إحلال مزدوج.\nب) CaCO₃ + 2HCl →(dil.) CaCl₂ + H₂O + CO₂↑\nج) ثاني أكسيد الكربون، يعكر ماء الجير الرائق."],
+["متنوعة: لماذا يمنع حفظ الأحماض المخففة في خزانات من الحديد أو الخارصين بينما النحاس آمن؟","لأن الحديد والخارصين يسبقان الهيدروجين فيحلان محله ويتآكل الخزان، أما النحاس فيلي الهيدروجين فلا يتفاعل مع الحمض."],
+["متنوعة: اشرح كيف يمكن التخلص من أيونات الفضة الذائبة بتفاعل AgNO₃ مع NaCl.","AgNO₃ + NaCl → NaNO₃ + AgCl↓\nيضاف كلوريد الصوديوم فتتحد أيونات الكلوريد مع الفضة مكونة راسب AgCl الأبيض غير الذائب، ثم يفصل الراسب."],
+["متنوعة: معالجة نفايات تحتوي H₂SO₄ بـ NaOH: (أ) الغرض (ب) نوع التفاعل (ج) المعادلة.","أ) معادلة الحمض لحماية شبكات الصرف والمياه من التآكل والتلوث.\nب) إحلال مزدوج (تعادل).\nج) 2NaOH + H₂SO₄ → Na₂SO₄ + 2H₂O"]]);
+E.push(...[
+['علل: يتصاعد غاز أول أكسيد الكربون السام عند احتراق الغازات الهيدروكربونية في الأماكن سيئة التهوية؟','لنقص الأكسجين فيحدث احتراق غير تام.',2],
+['علل: تتكون طبقة سوداء من السناج على أواني الطهي أحياناً؟','بسبب الاحتراق غير التام ونقص كمية الأكسجين.',2],
+['علل: اختلاف لون اللهب الناتج عن احتراق الغازات الهيدروكربونية؟','لاختلاف كمية الأكسجين المتوفرة (أزرق = احتراق تام، أصفر = احتراق غير تام).',2],
+['علل: خطورة احتراق الوقود المحتوي على الكبريت؟','لأنه ينتج ثاني أكسيد الكبريت الذي يلوث الهواء ويسبب الأمطار الحامضية.',2],
+['علل: يلجأ بعض المزارعين إلى حرق قش الأرز في الحقول؟','للتخلص منه وسرعة تجهيز الأرض للمحصول التالي.',2],
+['علل: يحدث احتراق غير تام لقش الأرز عند حرقه في كومات؟','لنقص كمية الأكسجين.',2],
+['علل: خطورة السحابة السوداء على صحة الإنسان؟','لأنها تسبب صعوبة الرؤية والتنفس وزيادة حالات الربو والحساسية الصدرية.',2],
+['علل: استخدام محاليل قلوية في أجهزة غسل الغازات بالمصانع؟','لتتعادل مع الغازات الحامضية وتترسب كأملاح آمنة وتقل الأمطار الحامضية.',2],
+['علل: يعد الاحتراق التام أفضل من غير التام في الاستخدام المنزلي؟','لأنه ينتج كمية كبيرة من الحرارة فيطهو الطعام أسرع ويقل استهلاك الغاز.',2],
+['علل: يتعكر ماء الجير عند تمرير نواتج احتراق الغاز الطبيعي فيه؟','لوجود غاز ثاني أكسيد الكربون.',2],
+['علل: توضع علامات تحذيرية على صهاريج نقل البنزين وخزانات الكحول؟','لأنها مواد ملتهبة سريعة الاشتعال وخطورتها مرتفعة.',2],
+['علل: تعد مصادر الطاقة المتجددة أقل تلويثاً للبيئة من الوقود الحفري؟','لأن احتراق الوقود الحفري ينتج غازات ضارة مثل ثاني أكسيد الكربون وأكاسيد الكبريت.',2],
+['علل: تكون الأمطار الحمضية في المناطق الصناعية الكبرى؟','لزيادة كمية الغازات الحامضية الناتجة من احتراق الوقود.',2],
+['علل: ضرورة تركيب محول حفزي في السيارات؟','لتحويل الغازات السامة إلى غازات أقل ضرراً.',2],
+['علل: يسبب الاحتراق غير التام مخاطر التلوث البيئي؟','لأنه ينتج أول أكسيد الكربون السام والسناج.',2],
+['علل: يظهر رماد السيجارة باللون الأبيض أو الرمادي؟','لاحتوائه على معادن غير متطايرة مثل الكالسيوم والبوتاسيوم.',3],
+['علل: تراجع قدرة المدخن على بذل المجهود البدني؟','لأن التدخين يفقد الرئتين مرونتهما وتقل سعتهما ويقل الأكسجين المنقول للخلايا.',3],
+['علل: خطورة التدخين على الخصوبة والصحة الإنجابية؟','لأنه يضعف الخصوبة ويزيد التشوهات الجنينية.',3],
+['علل: يتسبب التدخين في إجبار القلب على بذل مجهود مضاعف؟','لأن النيكوتين يزيد معدل ضربات القلب وضغط الدم ويضيق الأوعية الدموية.',3],
+['علل: يؤثر التدخين سلباً في الجهاز العصبي والحواس؟','لأنه يزيد التوتر واضطرابات النوم والرؤية.',3],
+['علل: المدخن السلبي معرض لنفس أمراض المدخن المباشر؟','لأن الدخان الذي يستنشقه يحتوي على تركيزات عالية من الغازات السامة دون مروره بفلتر.',3],
+['علل: قد تتلوث المحيطات والأنهار بسبب السجائر؟','لأن ملايين الأطنان من فلاتر السجائر ينتهي بها المطاف في المحيطات والأنهار.',3],
+['علل: التدخين عادة سلبية يصعب التخلص منها؟','لاحتوائه على النيكوتين الذي يسبب الإدمان.',3],
+['علل: يسبب التدخين اضطرابات النوم وزيادة التوتر لدى المراهقين؟','لأن النيكوتين مادة منبهة تؤثر على كيمياء الدماغ وتسبب اضطرابات الجهاز العصبي.',3],
+['علل: يؤدي التدخين إلى شحوب الجلد وتساقط الشعر؟','لأن النيكوتين وأول أكسيد الكربون يضيقان الأوعية الدموية ويخفضان الأكسجين والمغذيات الواصلة للجلد وبصيلات الشعر.',3],
+['علل: ينصح بالابتعاد عن أصدقاء السوء للوقاية من التدخين؟','لأنهم يشجعون على التدخين.',3],
+['علل: التدخين الإلكتروني ليس بديلاً آمناً للتقليدي؟','لاحتوائه على نسب عالية من النيكوتين تسبب الإدمان واضطرابات الجهاز العصبي.',3],
+['ماذا يحدث عند: غياب أحد عناصر الاحتراق الثلاثة؟','لا يحدث احتراق.',2],
+['ماذا يحدث عند: عدم وصول مادة قابلة للاشتعال إلى درجة الاشتعال؟','لا يحدث اشتعال.',2],
+['ماذا يحدث عند: وضع ورقة مبللة بالماء فوق لهب شمعة؟','لا تحترق الورقة المبللة لأن الماء يمتص الحرارة.',2],
+['ماذا يحدث عند: احتكاك رأس عود الثقاب بجدار العلبة؟','تنتج طاقة حرارية تحول الفوسفور الأحمر إلى فوسفور أبيض يشتعل تلقائياً.',2],
+['ماذا يحدث عند: انحلال كلورات البوتاسيوم في رأس عود الثقاب؟','يتكون كلوريد البوتاسيوم وأكسجين فيشتعل رأس العود بشدة.\n2KClO₃ →(Δ) 2KCl + 3O₂↑',2],
+['ماذا يحدث عند: تقريب عود ثقاب مشتعل من بنزين أو كحول؟','يشتعل بسرعة عالية وخطورة شديدة.',2],
+['ماذا يحدث عند: غياب الأكسجين تماماً أثناء إشعال موقد الغاز؟','لا يحدث اشتعال للغاز.',2],
+['ماذا يحدث عند: زيادة كمية الأكسجين أثناء الاحتراق؟','يحدث احتراق تام وتكون كفاءة التسخين عالية.',2],
+['ماذا يحدث عند: إشعال شريط ماغنسيوم في جو من الأكسجين؟','يحترق بلهب أبيض ساطع ويتكون أكسيد الماغنسيوم الأبيض.\n2Mg + O₂ →(Δ) 2MgO',2],
+['ماذا يحدث عند: احتراق قطعة من الفحم في جو من الأكسجين؟','يتكون غاز ثاني أكسيد الكربون.\nC + O₂ →(Δ) CO₂',2],
+['ماذا يحدث عند: وضع دوار الشمس في محلول أكسيد الماغنسيوم؟','يتحول إلى اللون الأزرق (محلول قلوي).',2],
+['ماذا يحدث عند: اتحاد لافلز مع الأكسجين وذوبان الأكسيد في الماء؟','يتكون أكسيد حامضي يذوب في الماء مكوناً حمضاً.',2],
+['ماذا يحدث عند: انسداد فتحات الهواء تماماً في موقد الطهي؟','احتراق غير تام ولهب أصفر وينتج أول أكسيد الكربون السام والسناج.',2],
+['ماذا يحدث عند: وضع إناء طعام فوق لهب أصفر؟','تقل كفاءة التسخين وسرعة الطهي ويزداد استهلاك الوقود.',2],
+['ماذا يحدث عند: فتح صمام الهواء بموقد بنزن تماماً؟','يكون اللهب أزرق وتزداد الحرارة.',2],
+['ماذا يحدث عند: تعريض ورقة كلوريد الكوبلت اللامائية الزرقاء لبخار الماء؟','يتحول لونها من الأزرق إلى الوردي.',2],
+['ماذا يحدث عند: تفاعل أكسيد النيتريك مع أكسجين الهواء؟','يتحول إلى ثاني أكسيد النيتروجين البني المحمر.\n2NO + O₂ → 2NO₂',2],
+['ماذا يحدث عند: ذوبان ثاني أكسيد النيتروجين في الماء؟','يتكون حمض النيتروز وحمض النيتريك.\n2NO₂ + H₂O → HNO₂ + HNO₃',2],
+['ماذا يحدث عند: احتراق الوقود المحتوي على الكبريت؟','ينتج غاز ثاني أكسيد الكبريت.\nS + O₂ →(Δ) SO₂',2],
+['ماذا يحدث عند: إمرار ناتج الاحتراق التام للمواد العضوية في ماء جير رائق؟','يتعكر ماء الجير.',2],
+['ماذا يحدث عند: حرق أكوام قش الأرز في الحقول؟','تتكون سحابة سوداء وينتج السناج وأول وثاني أكسيد الكربون.',2],
+['ماذا يحدث عند: احتراق الوقود داخل محرك السيارة في مكان مغلق؟','احتراق غير تام وتزداد الغازات الضارة.',2],
+['ماذا يحدث عند: تراكم أكاسيد النيتروجين في هواء مدينة مزدحمة؟','تذوب في مياه الأمطار مكونة حمض النيتروز والنيتريك وتسقط كأمطار حمضية.',2],
+['ماذا يحدث عند: عدم وجود محول حفزي في السيارة؟','تنتج غازات سامة ويزداد التلوث البيئي.',2],
+['ماذا يحدث عند: تمرير الغازات الحمضية على رذاذ محاليل قلوية في أجهزة الغسل؟','يحدث تفاعل تعادل وتترسب أملاح آمنة ويقل تكون الأمطار الحامضية.',2],
+['ماذا يحدث عند: تعطل أجهزة غسل الغازات الحمضية في المصنع؟','تخرج الغازات الحامضية السامة وتزداد الأمطار الحامضية والضباب الدخاني.',2],
+['ماذا يحدث عند: إحلال الغاز الطبيعي محل الفحم في محطات الكهرباء؟','تقل الغازات الضارة الناتجة عن احتراق الفحم.',2],
+['ماذا يحدث عند: زيادة اعتماد المجتمع على الوقود الحفري بدلاً من الطاقة المتجددة؟','تزداد الغازات الضارة وتلوث الهواء وتحدث أمطار حمضية وضباب دخاني.',2],
+['ماذا يحدث عند: مرور دخان السجائر المشتعلة على قطعة قطن بيضاء؟','يترسب القطران عليها ويتحول لونها إلى البني أو الأسود.',3],
+['ماذا يحدث عند: الاستمرار في التدخين بالنسبة للون الرئتين؟','تتحول الرئتان من الوردي إلى الأسود.',3],
+['ماذا يحدث عند: استنشاق أول أكسيد الكربون الناتج عن التدخين؟','يرتبط بهيموجلوبين الدم وتقل كمية الأكسجين في الدم.',3],
+['ماذا يحدث عند: ارتباط أول أكسيد الكربون بالهيموجلوبين بدلاً من الأكسجين؟','ينقص الأكسجين الواصل للمخ والخلايا مسبباً الصداع والدوار والإغماء وقد يؤدي للوفاة.',3],
+['ماذا يحدث عند: تراكم العناصر المشعة مثل البولونيوم 210 في الرئة؟','تلف الحمض النووي DNA لخلايا الرئة وزيادة خطر الأورام السرطانية.',3],
+['ماذا يحدث عند: احتراق الكربوهيدرات والبروتينات الموجودة في التبغ؟','يتكون أول أكسيد الكربون ومادة القطران.',3],
+['ماذا يحدث عند: فقد الرئة لمرونتها ونقص سعتها لدى المدخن؟','ضيق تنفس وسعال مستمر وضعف القدرة البدنية وزيادة فرص سرطان الرئة.',3],
+['ماذا يحدث عند: تكرار التدخين يومياً لفترة طويلة؟','إدمان التدخين والإصابة بأمراض الجهاز التنفسي والدوري والعصبي وضعف الخصوبة والمناعة.',3],
+['ماذا يحدث عند: استمرار تراكم القطران على الجدر الداخلية للحويصلات الهوائية؟','الإصابة بالنفاخ الرئوي: تتمزق الجدر وتتحول إلى تجاويف كبيرة وتقل مساحة تبادل الغازات.',3],
+['ماذا يحدث عند: تدخين الأم الحامل بالنسبة لصحة الجنين؟','يزيد من أخطار التشوهات الجنينية.',3],
+['ماذا يحدث عند: الاستمرار في التدخين بالنسبة للجهاز المناعي والمظهر العام؟','يضعف جهاز المناعة ويسبب شحوب الجلد وتساقط الشعر.',3],
+['ماذا يحدث عند: زيادة ضيق الأوعية الدموية بسبب النيكوتين؟','الإصابة بأمراض القلب وتصلب الشرايين.',3],
+['ماذا يحدث عند: ارتفاع الحرارة الناتجة عن إشعال السيجارة بالنسبة للنيكوتين؟','يتبخر النيكوتين ويمتزج بالدخان فيستنشقه المدخن ويصل للدماغ عبر الدم.',3],
+['ماذا يحدث عند: التدخين بالنسبة لشعور المدخن بالراحة؟','يحفز النيكوتين إفراز مواد تسبب راحة مؤقتة تزول بسرعة.',3],
+['ماذا يحدث عند: مرور دخان السجائر عبر القطن الأبيض؟','يتحول لونه إلى الداكن بسبب ترسيب القطران والمواد السامة بين الألياف.',3],
+['ماذا يحدث عند: وصول النيكوتين للجهاز العصبي؟','زيادة التوتر واضطرابات النوم والرؤية وتأثير سلبي على الدماغ والتركيز.',3],
+['ماذا يحدث عند: إلقاء أعقاب السجائر في التربة؟','تتلوث التربة وتتسرب إليها المواد الكيميائية السامة.',3],
+['ماذا يحدث عند: زيادة نسبة ثاني أكسيد الكربون في الهواء الجوي؟','تحدث ظاهرة الاحتباس الحراري.',3],
+['ماذا يحدث عند: استنشاق غير المدخن لدخان السجائر؟','يتعرض لنفس مخاطر أمراض القلب والجهاز التنفسي.',3],
+['ماذا يحدث عند: مرور دخان السجائر عبر الفلتر بالنسبة للمدخن؟','تقل كمية المواد الضارة المستنشقة.',3],
+['أكمل: يتكون جانب علبة الكبريت من خليط من ______ ومسحوق ______ أو رمل.','الفوسفور الأحمر / الزجاج',2],
+['أكمل: يحتوي رأس عود الثقاب على ______ ومواد لاصقة ومسحوق زجاج أو رمل.','كلورات البوتاسيوم',2],
+['أكمل: يتكون غاز البوتاجاز من خليط من غازي ______ و ______.','البروبان / البيوتان',2],
+['أكمل: الغاز المؤشر الرئيسي للاحتراق التام هو ______.','ثاني أكسيد الكربون',2],
+['أكمل: مسحوق أسود من الكربون في الاحتراق غير التام يسمى ______ ويكون اللهب ______ اللون.','السناج / أصفر أو برتقالي',2],
+['أكمل: لا تحترق الورقة المبللة لقدرة الماء على ______ الحرارة.','امتصاص',2],
+['أكمل: عدد جزيئات الأكسجين اللازمة لاحتراق 4 جزيئات ميثان (CH₄ + 2O₂ →(Δ) CO₂ + 2H₂O) يساوي ______ جزيئات.','8',2],
+['أكمل: يتم الكشف عن ثاني أكسيد الكربون بإمراره في ______.','ماء الجير الرائق',2],
+['أكمل: ينتج عن الاحتراق التام للميثان مادتان هما ______ و ______.','ثاني أكسيد الكربون / بخار الماء',2],
+['أكمل: يتغير لون ورقة كلوريد الكوبلت اللامائية من ______ إلى ______ عند التعرض لبخار الماء.','الأزرق / الوردي',2],
+['أكمل: يتكون عادم السيارات من خليط من ______ و ______.','أول أكسيد الكربون / أكاسيد النيتروجين',2],
+['أكمل: من الصناعات الثقيلة المعتمدة على الاحتراق ______ و ______.','صهر المعادن / صناعة الأسمنت',2],
+['أكمل: تحول أجهزة غسل الغازات الحامضية الغازات السامة إلى ______ تترسب في قاع الجهاز.','أملاح آمنة',2],
+['أكمل: يعتمد عمل أجهزة ______ على تفاعلات التعادل بين الغازات الحمضية والمحاليل القلوية.','غسل الغازات الحامضية',2],
+['أكمل: تعالج الغازات الحمضية مثل أكاسيد الكبريت باستخدام محاليل ______.','قلوية',2],
+['أكمل: ينمو نبات التبغ في المناطق ______ ويتميز بساق ______ وأزهار ______ الشكل.','الدافئة والاستوائية / مستقيمة سميكة / أنبوبية',3],
+['أكمل: ترسب ______ في الرئة يحول لونها من الوردي إلى ______.','القطران / الأسود',3],
+['أكمل: يحتوي دخان السيجارة على ______ وغازات مهيجة مثل ______.','أول أكسيد الكربون / الأمونيا',3],
+['أكمل: عند إشعال السيجارة يتبخر ______ ويمتزج بالدخان.','النيكوتين',3],
+['أكمل: يحتوي النيكوتين على الكربون و ______ و ______.','الهيدروجين / النيتروجين',3],
+['أكمل: من الغازات السامة في دخان السيجارة ______ و ______.','أول أكسيد الكربون / سيانيد الهيدروجين',3],
+['أكمل: أكاسيد النيتروجين والأمونيا غازات ______ للجهاز التنفسي.','مهيجة',3],
+['أكمل: من العناصر الثقيلة السامة في التبغ ______ و ______ و ______.','الكادميوم / الرصاص / الزرنيخ',3],
+['أكمل: يحتوي رماد السيجارة على معادن غير متطايرة مثل ______ و ______.','الكالسيوم / البوتاسيوم',3],
+['أكمل: من العناصر المشعة في دخان التبغ ______ الذي يتلف ______ في خلايا الرئة.','البولونيوم 210 / الحمض النووي DNA',3],
+['أكمل: عند احتراق الكربوهيدرات والبروتينات في التبغ يتكون ______ و ______.','أول أكسيد الكربون / القطران',3],
+['أكمل: تتميز الحويصلات الهوائية برقة الجدر وكثرة العدد لتوفير ______ كبيرة لتبادل الغازات.','مساحة سطح',3],
+['أكمل: يرتبط أول أكسيد الكربون بالهيموجلوبين بمعدل ______ من الأكسجين.','أسرع',3],
+['أكمل: ارتباط أول أكسيد الكربون بالهيموجلوبين يقلل نسبة ______ المحمولة إلى الخلايا.','الأكسجين',3],
+['أكمل: يسبب التدخين اضطرابات عصبية مثل ______ و ______.','زيادة التوتر / اضطرابات النوم والرؤية',3],
+['أكمل: يزيد التدخين احتمالية حدوث ______ للأجنة.','تشوهات',3],
+['أكمل: يظهر أثر التدخين على المظهر في صورة ______ الجلد وتساقط ______.','شحوب / الشعر',3],
+['أكمل: يسبب ثاني أكسيد الكربون الناتج عن التدخين ظاهرة ______.','الاحتباس الحراري',3],
+['أكمل: ينقسم التدخين من حيث التعرض للدخان إلى تدخين ______ وتدخين ______.','مباشر / سلبي',3],
+['أكمل: من السلوكيات الوقائية تجنب أماكن التدخين وممارسة ______.','الرياضة والهوايات',3],
+['أكمل: أعقاب السجائر ملوث خطير لكل من ______ و ______.','التربة / المياه',3],
+['أكمل: دخان طرف السيجارة أشد خطورة لعدم مروره عبر ______.','فلتر السيجارة',3],
+['أكمل: يسبب التدخين الإلكتروني اضطرابات حادة في وظائف ______ و ______.','القلب / الجهاز العصبي',3],
+['متنوعة: حدد الضلع الذي يُكسر من مثلث الاحتراق في كل حالة: (أ) رش الماء البارد (ب) تغطية الحريق ببطانية (ج) إغلاق مصدر الغاز.','أ) ضلع الحرارة (خفض الحرارة دون درجة الاشتعال).\nب) ضلع الأكسجين (عزل أكسجين الهواء).\nج) ضلع الوقود (عزل المادة القابلة للاشتعال).',2],
+['متنوعة: اذكر مثالين لصناعات ثقيلة تعتمد على تفاعلات الاحتراق كمصدر للطاقة.','صهر المعادن – صناعة الأسمنت والزجاج – تقطير البترول.',2],
+['متنوعة: اقترح حلاً للحد من مشكلة السحابة السوداء الناتجة عن حرق المخلفات الزراعية.','حظر حرق قش الأرز وإعادة تدويره واستخدامه كعلف أو سماد عضوي أو وقود حيوي.',2],
+['متنوعة: اقترح تعديلاً تقنياً للحرق المكشوف للمخلفات الزراعية لضمان الاستفادة منها دون سحابة سوداء.','الحرق في أفران مغلقة مزودة بمراوح ضخ أكسجين لضمان الاحتراق التام، وتزويد مداخنها بفلاتر ومغاسل الغازات.',2],
+['متنوعة: وضح كيف يعمل المحول الحفزي على تحويل أول أكسيد الكربون وأكاسيد النيتروجين إلى مواد آمنة.','يحتوي خلايا سيراميكية مطلية بفلزات نفيسة (البلاتين والبالاديوم) تعمل كعوامل حفازة لتسريع تفاعلات الأكسدة والاختزال، فتتحول الغازات السامة إلى ثاني أكسيد الكربون والنيتروجين الأقل ضرراً.',2],
+['متنوعة: فسر كيف تتخلص أجهزة غسل الغازات من الغازات الحمضية الناتجة عن احتراق الفحم.','بتمرير الغازات الحامضية على رذاذ محاليل قلوية فيحدث تفاعل التعادل وتترسب كأملاح صلبة آمنة.',2],
+['متنوعة: اذكر إجراءين يمكن اتباعهما في المصانع للحد من التلوث الناتج عن الاحتراق.','تركيب أجهزة غسل الغازات الحمضية والفلاتر في المداخن.',2],
+['متنوعة: اذكر طريقتين للوقاية من التدخين.','تجنب أماكن التدخين – ممارسة الرياضة أو الهوايات – اختيار أصدقاء إيجابيين – التعرف على أضرار التدخين.',3],
+['متنوعة: اذكر أثراً واحداً للتدخين على كل من: الجهاز العصبي، الجهاز الدوري، البيئة المحيطة.','العصبي: زيادة التوتر واضطرابات النوم والرؤية.\nالدوري: يزيد ضربات القلب وضغط الدم ويضيق الأوعية.\nالبيئة: تلوث الهواء والماء والتربة.',3],
+['متنوعة: استخرج الكلمة المختلفة مع ذكر السبب: الصوديوم – البوتاسيوم – الماغنسيوم – النحاس.','النحاس، لأنه يلي الهيدروجين في متسلسلة النشاط الكيميائي ولا يتفاعل مع الأحماض.',1],
+['أهمية: ماء الجير.','الكشف عن وجود ثاني أكسيد الكربون.',2],
+['أهمية: احتراق الوقود في محرك السيارة.','ينتج طاقة حرارية تستخدم لتوليد طاقة ميكانيكية.',2],
+['أهمية: المحول الحفزي.','تحويل الغازات السامة إلى غازات أقل ضرراً.',2],
+['أهمية: أجهزة غسل الغازات في مداخن المصانع.','تقليل تكون الأمطار الحمضية والضباب الدخاني.',2],
+['قارن بين: احتراق الفلزات واحتراق اللافلزات (النواتج – تأثير المحلول على دوار الشمس – مثال).','الفلزات: أكاسيد قاعدية يذوب بعضها مكوناً قلوياً – تزرق الورقة الحمراء – احتراق الماغنسيوم.\nاللافلزات: أكاسيد حامضية تكون حمضاً – تحمر الورقة الزرقاء – احتراق الكربون (الفحم).',2],
+['قارن بين: ثاني أكسيد الكربون CO₂ وأول أكسيد الكربون CO (الظروف – الخواص).','CO₂: يتكون عند الاحتراق التام في وفرة أكسجين – لا يشتعل ولا يساعد على الاشتعال – عديم اللون والرائحة.\nCO: يتكون عند الاحتراق غير التام ونقص الأكسجين – غاز سام – عديم اللون والرائحة.',2],
+['قارن بين: الاحتراق التام والاحتراق غير التام (الأكسجين – النواتج – اللهب).','التام: وفرة أكسجين – CO₂ وبخار ماء وحرارة – لهب أزرق نظيف.\nغير التام: نقص أكسجين – CO وسناج وبخار ماء وحرارة – لهب أصفر أو برتقالي مدخن.',2],
+['قارن بين: احتراق الغاز الطبيعي واحتراق الفحم الحجري (CO₂ – أكاسيد الكبريت – السناج).','الغاز الطبيعي: كمية أقل من CO₂ – ينعدم تقريباً انبعاث أكاسيد الكبريت – ينعدم السناج.\nالفحم: كمية أكبر من CO₂ – تنبعث أكاسيد الكبريت الخانقة – ينبعث السناج الأسود.',2],
+['قارن بين: المحول الحفزي وأجهزة غسل الغازات (مكان الاستخدام – الغازات المعالجة).','المحول الحفزي: محرك السيارة – أول أكسيد الكربون وأكاسيد النيتروجين.\nأجهزة الغسل: المصانع – الغازات الحامضية السامة مثل ثاني أكسيد الكبريت.',2],
+['قارن بين: التدخين المباشر والتدخين السلبي (التعريف – الأضرار).','المباشر: استنشاق المدخن للدخان أو رذاذ الأجهزة الإلكترونية بشكل مقصود – أضرار بالغة ومباشرة للرئتين والقلب.\nالسلبي: استنشاق غير المدخن لدخان المدخن أو طرف السيجارة – نفس مخاطر أمراض القلب والجهاز التنفسي.',3],
+['قارن بين: التدخين التقليدي والتدخين الإلكتروني (التعريف – الأضرار).','التقليدي: حرق أوراق التبغ في السيجارة – أضرار بالغة للرئتين والقلب.\nالإلكتروني: تسخين سائل يحتوي نيكوتين بنسبة مرتفعة بجهاز إلكتروني – سرعة الإدمان واضطرابات حادة في القلب والجهاز العصبي.',3],
+['قارن بين: الدخان المستنشق والدخان المتصاعد من طرف السيجارة (تركيز المواد السامة – المسرطنة).','المستنشق: أقل تركيز لمروره على الفلتر – تركيزات أقل.\nالمتصاعد من الطرف: تركيز أعلى لعدم مروره على فلتر – تركيزات عالية من الغازات السامة والمسرطنة.',3]]);
+E.push(...[
+["المصطلح العلمي: كسر الروابط الموجودة في جزيئات المواد المتفاعلة وتكوين روابط جديدة في جزيئات المواد الناتجة من التفاعل.", "التفاعل الكيميائي", 1],
+["المصطلح العلمي: تفاعلات تتحد فيها مادتان أو أكثر لتكوين مركب جديد.", "تفاعلات الاتحاد المباشر", 1],
+["المصطلح العلمي: تفاعلات تتفكك فيها جزيئات بعض المركبات باستخدام الطاقة كالحرارة أو الضوء إلى مكونات أبسط.", "تفاعلات الانحلال", 1],
+["المصطلح العلمي: تفاعلات كيميائية يحل فيها عنصر نشط محل عنصر آخر أقل منه نشاطاً في أحد المركبات.", "تفاعلات الإحلال البسيط", 1],
+["المصطلح العلمي: ترتيب العناصر الفلزية ترتيباً تنازلياً حسب نشاطها الكيميائي.", "متسلسلة النشاط الكيميائي", 1],
+["المصطلح العلمي: تفاعلات كيميائية يتم فيها تبادل مزدوج بين شقي (أيونات) مركبين مختلفين لتكوين مركبين جديدين.", "تفاعل الإحلال المزدوج", 1],
+["المصطلح العلمي: تفاعل حمض مع قلوي لتكوين ملح وماء.", "تفاعل التعادل", 1],
+["المصطلح العلمي: تفاعل إحلال مزدوج ينتج عنه تكوين مادة غير ذائبة في الماء.", "تفاعل الترسيب", 1],
+["المصطلح العلمي: عملية كيميائية تفقد فيها الذرة أو الأيون إلكتروناً أو أكثر.", "عملية الأكسدة", 1],
+["المصطلح العلمي: عملية كيميائية تكتسب فيها الذرة أو الأيون إلكتروناً أو أكثر.", "عملية الاختزال", 1],
+["المصطلح العلمي: المادة التي تكتسب إلكتروناً أو أكثر أثناء التفاعل الكيميائي.", "العامل المؤكسد", 1],
+["المصطلح العلمي: المادة التي تفقد إلكتروناً أو أكثر أثناء التفاعل الكيميائي.", "العامل المختزل", 1],
+["المصطلح العلمي: نقطة التحول في تفاعل الحمض مع القلوي التي يتحول فيها لون دليل اليونيفرسال إلى الأخضر.", "نقطة التعادل", 1],
+["المصطلح العلمي: راسب أبيض يتكون عند إضافة محلول نترات الفضة إلى محلول كلوريد الصوديوم.", "كلوريد الفضة (AgCl)", 1],
+["المصطلح العلمي: الماء الذي يحتوي على نسبة عالية من أملاح الكالسيوم والماغنسيوم.", "الماء العسر", 1],
+["المصطلح العلمي: أقل درجة حرارة تبدأ عندها المادة في الاشتعال.", "درجة الاشتعال", 2],
+["المصطلح العلمي: مدى قابلية المادة للاشتعال عند تعرضها لمصدر حراري في وجود الأكسجين.", "قابلية الاشتعال", 2],
+["المصطلح العلمي: مواد قابلة للاشتعال تتميز بسرعة الاشتعال وذات خطورة مرتفعة.", "المواد الملتهبة", 2],
+["المصطلح العلمي: مركبات كيميائية تتكون من عنصري الكربون والهيدروجين بصفة أساسية.", "الهيدروكربونات", 2],
+["المصطلح العلمي: تفاعل كيميائي بين المادة والأكسجين وينتج حرارة أو ضوء أو كليهما.", "الاحتراق", 2],
+["المصطلح العلمي: تفاعل كيميائي يحدث للغازات الهيدروكربونية في وجود وفرة من غاز الأكسجين.", "الاحتراق التام", 2],
+["المصطلح العلمي: تفاعل كيميائي يحدث للغازات الهيدروكربونية في حالة نقص كمية الأكسجين.", "الاحتراق غير التام", 2],
+["المصطلح العلمي: الغاز السام الناتج أحياناً عند حدوث احتراق غير تام للمركبات الهيدروكربونية.", "أول أكسيد الكربون", 2],
+["المصطلح العلمي: مادة كيميائية توجد في رأس عود الثقاب وتعمل كعامل مؤكسد ضروري للاشتعال.", "كلورات البوتاسيوم", 2],
+["المصطلح العلمي: أكاسيد يذوب بعضها في الماء مكونة محاليل تزرق ورقة دوار الشمس.", "الأكاسيد القاعدية", 2],
+["المصطلح العلمي: أكاسيد يذوب معظمها في الماء مكونة محاليل تحمر ورقة دوار الشمس.", "الأكاسيد الحامضية", 2],
+["المصطلح العلمي: المركبات الناتجة من ذوبان بعض أكاسيد الفلزات في الماء.", "القلويات", 2],
+["المصطلح العلمي: المركبات الناتجة من ذوبان أكاسيد اللافلزات في الماء.", "الأحماض", 2],
+["المصطلح العلمي: المادة السوداء الناتجة عن الاحتراق غير التام للغازات الهيدروكربونية.", "السناج", 2],
+["المصطلح العلمي: مادة تستخدم للكشف عن وجود بخار الماء في نواتج الاحتراق.", "كلوريد الكوبلت اللامائية الزرقاء", 2],
+["المصطلح العلمي: محلول يتعكر عند إمرار غاز ثاني أكسيد الكربون فيه لفترة قصيرة.", "ماء الجير الرائق", 2],
+["المصطلح العلمي: غاز لونه بني محمر ذو رائحة نفاذة يذوب في الماء مكوناً أحماضاً.", "ثاني أكسيد النيتروجين", 2],
+["المصطلح العلمي: خليط من الانبعاثات الناتجة عن عملية احتراق الوقود داخل محرك السيارة.", "عادم السيارات", 2],
+["المصطلح العلمي: دخان كثيف يتشكل في الهواء نتيجة تصاعد كميات كبيرة من الغازات وجسيمات الكربون.", "السحابة السوداء", 2],
+["المصطلح العلمي: الغاز السام عديم اللون والرائحة الناتج عن الاحتراق غير التام للوقود.", "أول أكسيد الكربون", 2],
+["المصطلح العلمي: حمض يتكون نتيجة ذوبان غاز ثاني أكسيد الكبريت في الماء.", "حمض الكبريتوز", 2],
+["المصطلح العلمي: حمض يتكون نتيجة ذوبان غاز ثاني أكسيد الكربون في الماء.", "حمض الكربونيك", 2],
+["المصطلح العلمي: جهاز في السيارات يعتمد على عوامل حفازة لتحويل الغازات السامة إلى غازات آمنة.", "المحول الحفزي", 2],
+["المصطلح العلمي: أجهزة تستخدم في مداخن المصانع تعتمد على رذاذ المحاليل القلوية لترسيب الغازات الحمضية السامة.", "أجهزة غسل الغازات", 2],
+["المصطلح العلمي: غاز رائحته خانقة ينتج عن احتراق الوقود المحتوي على الكبريت.", "ثاني أكسيد الكبريت", 2],
+["المصطلح العلمي: الغازات الناتجة عن احتراق المركبات النيتروجينية داخل الوقود الحفري.", "أكاسيد النيتروجين", 2],
+["المصطلح العلمي: التفاعلات التي تحول الغازات السامة في العادم إلى غازات أقل ضرراً.", "تفاعلات الأكسدة والاختزال", 2],
+["المصطلح العلمي: نبات مستقيم الساق ينمو في المناطق الاستوائية الدافئة وتستخدم أوراقه في السجائر.", "نبات التبغ", 3],
+["المصطلح العلمي: مركب عضوي طبيعي قلوي يصل إلى الدماغ بسرعة ويحفز إفراز مواد تسبب شعوراً مؤقتاً بالراحة وهو المسؤول عن الإدمان.", "النيكوتين", 3],
+["المصطلح العلمي: مادة لزجة داكنة اللون تنتج عن احتراق التبغ وتترسب داخل مجرى التنفس مسببة سرطان الرئة وفقدان مرونة الأنسجة.", "القطران", 3],
+["المصطلح العلمي: تراكيب هوائية صغيرة الحجم رقيقة الجدر توفر مساحة سطح كبيرة لتبادل الغازات في الرئتين.", "الحويصلات الهوائية", 3],
+["المصطلح العلمي: غاز سام ينتج عن احتراق التبغ ويرتبط بهيموجلوبين الدم أسرع من الأكسجين.", "أول أكسيد الكربون", 3],
+["المصطلح العلمي: عنصر مشع يتواجد في دخان المدخنين، يتراكم في خلايا الرئة مسبباً تلف مادتها الوراثية.", "البولونيوم 210", 3],
+["المصطلح العلمي: مرض تنفسي ينتج عن تمزق جدر الحويصلات الهوائية وتحولها لتجاويف كبيرة مترهلة.", "النفاخ الرئوي", 3],
+["المصطلح العلمي: المرحلة التي تتبخر فيها المعادن وتتلاصق بجزيئات القطران الدقيقة عند اشتعال السيجارة.", "مرحلة التطاير", 3],
+["المصطلح العلمي: مادة كيميائية سامة تسبب سرعة الإدمان وتؤثر على الجهاز العصبي ووظائف القلب.", "النيكوتين", 3],
+["المصطلح العلمي: استنشاق غير المدخنين للدخان المنبعث من سجائر المدخنين.", "التدخين السلبي", 3],
+["المصطلح العلمي: استنشاق المدخن للدخان الناتج عن احتراق التبغ أو بخار الأجهزة الإلكترونية، وإدخاله بشكل مقصود إلى رئتيه.", "التدخين المباشر", 3],
+["المصطلح العلمي: طريقة للتدخين تعتمد على حرق أوراق التبغ الموجودة بالسجائر.", "التدخين التقليدي", 3],
+["المصطلح العلمي: طريقة للتدخين تعتمد على تسخين سائل يحتوي على النيكوتين بواسطة جهاز إلكتروني.", "التدخين الإلكتروني", 3],
+["المصطلح العلمي: ظاهرة بيئية عالمية تتمثل في ارتفاع درجة حرارة الأرض، يساهم فيها التدخين عبر إطلاق كميات كبيرة من غاز ثاني أكسيد الكربون.", "ظاهرة الاحتباس الحراري", 3]]);
+const LN=['','الدرس الأول','الدرس الثاني','الدرس الثالث'],TY=['المصطلح العلمي','علل','ماذا يحدث','أكمل','صوب','متنوعة','أهمية','قارن بين'],TL={'المصطلح العلمي':'🔤 المصطلح العلمي','علل':'❓ علل','ماذا يحدث':'⚗️ ماذا يحدث','أكمل':'✏️ أكمل','صوب':'🛠️ صوّب ما تحته خط','متنوعة':'🧩 أسئلة متنوعة','أهمية':'⭐ اذكر أهمية','قارن بين':'⚖️ قارن بين'},LR=[[0,9,1],[10,14,2],[15,19,3],[20,36,1],[37,44,2],[45,48,3],[49,62,1],[63,66,2],[67,94,1],[95,97,3],[98,103,1]];
+E.forEach((e,i)=>{e.t=TY.find(k=>e[0].startsWith(k))||'متنوعة';e.l=e[2]||(LR.find(r=>i>=r[0]&&i<=r[1])||[0,0,1])[2]});
+const PP=['أنت بتذاكر من ورانا ولا إيه؟! 😏','يا واد يا چينيس! 🧠','ممتاز يا واد.. بس إياك تتغر! 👆','يا عيني على الحلو لما يركز ويجاوب صح! 😄','بسم الله ما شاء الله على عيالي.. عين الحسود فيها عود 🤲'],W=['إيه ده؟ لا دي كيميا.. كيميا! 😱','جايب الإجابة دي منين يا ابني؟! 🤯','إيه اللي إنت هببته ده؟ ركز شوية! 😳','أنا أعصابي باظت من الإجابات دي 😩','إنت جاي تهزر هنا ولا إيه؟.. حاول تاني! 🧐','يا حلاوة.. هي دي الإجابة؟ فكر تاني! 🤦'];
+const P=["أشطر كتكوت 🐥","أحلى قلب عليك ❤️","قلبي وربي راضيين عليك 🤲","القيادات كلها مبسوطة منك يا بوحة 👑","والله كفو 👏"];
+const K="alc4";let S={m:{i:0,t:{}},e:{sel:[1,1,1],i:{},s:{}}};
+try{const x=localStorage.getItem(K);if(x)S=JSON.parse(x)}catch(e){}
+const sv=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
+const app=document.getElementById("app");
+function h(tag,txt,cls,fn){const n=document.createElement(tag);if(txt!=null)n.textContent=txt;if(cls)n.className=cls;if(fn)n.onclick=fn;return n}
+const FP=["<circle cx=\"60\" cy=\"52\" r=\"42\" fill=\"#ffd54a\" stroke=\"#b07a00\" stroke-width=\"2.5\"/><polygon points=\"41.0,31.0 44.5,39.1 53.4,40.0 46.7,45.9 48.6,54.5 41.0,50.0 33.4,54.5 35.3,45.9 28.6,40.0 37.5,39.1\" fill=\"#fff176\" stroke=\"#b25e00\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><polygon points=\"79.0,31.0 82.5,39.1 91.4,40.0 84.7,45.9 86.6,54.5 79.0,50.0 71.4,54.5 73.3,45.9 66.6,40.0 75.5,39.1\" fill=\"#fff176\" stroke=\"#b25e00\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/><ellipse cx=\"30\" cy=\"62\" rx=\"7\" ry=\"4.5\" fill=\"#ff7a8a\" opacity=\".55\"/><ellipse cx=\"90\" cy=\"62\" rx=\"7\" ry=\"4.5\" fill=\"#ff7a8a\" opacity=\".55\"/><path d=\"M37 60 Q60 94 83 60 Z\" fill=\"#7a1f0e\" stroke=\"#7a1f0e\" stroke-width=\"3\" stroke-linejoin=\"round\"/><path d=\"M47 76 Q60 68 73 76 Q60 86 47 76Z\" fill=\"#ff6b81\"/><path d=\"M42 62 H78 L76 67 H44Z\" fill=\"#fff\"/>", "<circle cx=\"60\" cy=\"52\" r=\"42\" fill=\"#ffd54a\" stroke=\"#b07a00\" stroke-width=\"2.5\"/><path d=\"M24 36 h32 v11 q0 11 -11 11 h-10 q-11 0 -11 -11z\" fill=\"#111\"/><path d=\"M64 36 h32 v11 q0 11 -11 11 h-10 q-11 0 -11 -11z\" fill=\"#111\"/><rect x=\"55\" y=\"38\" width=\"10\" height=\"5\" fill=\"#111\"/><path d=\"M30 41 l8 -2\" stroke=\"#fff\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><path d=\"M70 41 l8 -2\" stroke=\"#fff\" stroke-width=\"2.5\" stroke-linecap=\"round\"/><ellipse cx=\"30\" cy=\"62\" rx=\"7\" ry=\"4.5\" fill=\"#ff7a8a\" opacity=\".55\"/><ellipse cx=\"90\" cy=\"62\" rx=\"7\" ry=\"4.5\" fill=\"#ff7a8a\" opacity=\".55\"/><path d=\"M38 64 Q60 86 82 64\" stroke=\"#7a1f0e\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>", "<circle cx=\"60\" cy=\"52\" r=\"42\" fill=\"#ffd54a\" stroke=\"#b07a00\" stroke-width=\"2.5\"/><path d=\"M41 57 C21 42 30 28 41 39 C52 28 61 42 41 57Z\" fill=\"#e53935\" stroke=\"#8e0000\" stroke-width=\"1.5\"/><path d=\"M79 57 C59 42 68 28 79 39 C90 28 99 42 79 57Z\" fill=\"#e53935\" stroke=\"#8e0000\" stroke-width=\"1.5\"/><ellipse cx=\"30\" cy=\"62\" rx=\"7\" ry=\"4.5\" fill=\"#ff7a8a\" opacity=\".55\"/><ellipse cx=\"90\" cy=\"62\" rx=\"7\" ry=\"4.5\" fill=\"#ff7a8a\" opacity=\".55\"/><path d=\"M37 60 Q60 94 83 60 Z\" fill=\"#7a1f0e\" stroke=\"#7a1f0e\" stroke-width=\"3\" stroke-linejoin=\"round\"/><path d=\"M47 76 Q60 68 73 76 Q60 86 47 76Z\" fill=\"#ff6b81\"/><path d=\"M42 62 H78 L76 67 H44Z\" fill=\"#fff\"/>", "<circle cx=\"60\" cy=\"52\" r=\"44\" fill=\"#fff3c4\"/><path d=\"M38 18 h44 v24 q0 24 -22 26 q-22 -2 -22 -26z\" fill=\"#ffc928\" stroke=\"#b07a00\" stroke-width=\"3\" stroke-linejoin=\"round\"/><path d=\"M38 25 h-11 q0 22 15 24\" fill=\"none\" stroke=\"#b07a00\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M82 25 h11 q0 22 -15 24\" fill=\"none\" stroke=\"#b07a00\" stroke-width=\"5\" stroke-linecap=\"round\"/><rect x=\"54\" y=\"66\" width=\"12\" height=\"9\" fill=\"#e0a100\"/><rect x=\"40\" y=\"74\" width=\"40\" height=\"9\" rx=\"3\" fill=\"#b07a00\"/><polygon points=\"60.0,28.0 62.9,36.0 71.4,36.3 64.8,41.5 67.1,49.7 60.0,45.0 52.9,49.7 55.2,41.5 48.6,36.3 57.1,36.0\" fill=\"#fff\" stroke=\"#b25e00\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/>", "<circle cx=\"60\" cy=\"52\" r=\"44\" fill=\"#d8f5e8\"/><polygon points=\"38,8 56,8 62,38 46,38\" fill=\"#e53935\" stroke=\"#8e0000\" stroke-width=\"2\"/><polygon points=\"82,8 64,8 58,38 74,38\" fill=\"#1e88e5\" stroke=\"#0d47a1\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"56\" r=\"26\" fill=\"#ffc928\" stroke=\"#b07a00\" stroke-width=\"3.5\"/><circle cx=\"60\" cy=\"56\" r=\"19\" fill=\"none\" stroke=\"#b07a00\" stroke-width=\"2\" stroke-dasharray=\"3 3\"/><polygon points=\"60.0,41.0 63.8,50.7 74.3,51.4 66.2,58.0 68.8,68.1 60.0,62.5 51.2,68.1 53.8,58.0 45.7,51.4 56.2,50.7\" fill=\"#fff\" stroke=\"#b25e00\" stroke-width=\"1.5\" stroke-linejoin=\"round\"/>"],FN=["<circle cx=\"60\" cy=\"52\" r=\"42\" fill=\"#ffd54a\" stroke=\"#b07a00\" stroke-width=\"2.5\"/><path d=\"M28 42 Q41 32 54 42\" stroke=\"#5d3a00\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M66 42 Q79 32 92 42\" stroke=\"#5d3a00\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M41 52 Q32 66 36 76 Q41 80 44 74 Q46 62 41 52Z\" fill=\"#4fc3f7\" stroke=\"#0277bd\" stroke-width=\"1.5\"/><path d=\"M79 52 Q70 66 74 76 Q79 80 82 74 Q84 62 79 52Z\" fill=\"#4fc3f7\" stroke=\"#0277bd\" stroke-width=\"1.5\"/><path d=\"M42 76 Q60 60 78 76\" stroke=\"#7a1f0e\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/>", "<circle cx=\"60\" cy=\"52\" r=\"42\" fill=\"#ffe082\" stroke=\"#b07a00\" stroke-width=\"2.5\"/><path d=\"M33 36 l16 16 M49 36 l-16 16\" stroke=\"#3b2200\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M71 36 l16 16 M87 36 l-16 16\" stroke=\"#3b2200\" stroke-width=\"5\" stroke-linecap=\"round\"/><path d=\"M38 72 Q47 62 56 72 T74 72 T84 70\" stroke=\"#7a1f0e\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/><text x=\"96\" y=\"22\" font-size=\"18\" fill=\"#b25e00\" font-family=\"Arial\">★</text><text x=\"12\" y=\"30\" font-size=\"14\" fill=\"#b25e00\" font-family=\"Arial\">★</text>", "<circle cx=\"60\" cy=\"52\" r=\"42\" fill=\"#ff8a65\" stroke=\"#b07a00\" stroke-width=\"2.5\"/><path d=\"M26 32 L54 44\" stroke=\"#3b0a00\" stroke-width=\"6\" stroke-linecap=\"round\"/><path d=\"M94 32 L66 44\" stroke=\"#3b0a00\" stroke-width=\"6\" stroke-linecap=\"round\"/><circle cx=\"42\" cy=\"52\" r=\"5\" fill=\"#222\"/><circle cx=\"78\" cy=\"52\" r=\"5\" fill=\"#222\"/><path d=\"M40 78 Q60 60 80 78\" stroke=\"#3b0a00\" stroke-width=\"5.5\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"20\" cy=\"14\" r=\"7\" fill=\"#fff\" stroke=\"#ccc\"/><circle cx=\"30\" cy=\"8\" r=\"5\" fill=\"#fff\" stroke=\"#ccc\"/><circle cx=\"100\" cy=\"14\" r=\"7\" fill=\"#fff\" stroke=\"#ccc\"/><circle cx=\"90\" cy=\"8\" r=\"5\" fill=\"#fff\" stroke=\"#ccc\"/>", "<circle cx=\"60\" cy=\"52\" r=\"42\" fill=\"#ffd54a\" stroke=\"#b07a00\" stroke-width=\"2.5\"/><path d=\"M28 34 Q42 28 54 38\" stroke=\"#5d3a00\" stroke-width=\"4.5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M92 34 Q78 28 66 38\" stroke=\"#5d3a00\" stroke-width=\"4.5\" fill=\"none\" stroke-linecap=\"round\"/><circle cx=\"41\" cy=\"48\" r=\"9\" fill=\"#fff\" stroke=\"#5d3a00\" stroke-width=\"2\"/><circle cx=\"79\" cy=\"48\" r=\"9\" fill=\"#fff\" stroke=\"#5d3a00\" stroke-width=\"2\"/><circle cx=\"43\" cy=\"45\" r=\"4\" fill=\"#222\"/><circle cx=\"81\" cy=\"45\" r=\"4\" fill=\"#222\"/><path d=\"M42 74 Q50 66 58 74 T76 74\" stroke=\"#7a1f0e\" stroke-width=\"5\" fill=\"none\" stroke-linecap=\"round\"/><path d=\"M98 18 Q90 30 94 38 Q102 40 104 32 Q104 26 98 18Z\" fill=\"#4fc3f7\" stroke=\"#0277bd\" stroke-width=\"1.5\"/>", "<circle cx=\"60\" cy=\"52\" r=\"44\" fill=\"#ffe0e0\"/><path d=\"M50 12 h20 v22 l24 40 q6 12 -6 12 h-56 q-12 0 -6 -12 l24 -40z\" fill=\"#bbdefb\" stroke=\"#14213d\" stroke-width=\"3\" stroke-linejoin=\"round\"/><path d=\"M38 62 L82 62 L94 76 q6 12 -6 12 h-56 q-12 0 -6 -12z\" fill=\"#ef5350\" opacity=\".85\"/><path d=\"M60 12 l-5 9 l7 6 l-5 9\" stroke=\"#14213d\" stroke-width=\"2.5\" fill=\"none\" stroke-linejoin=\"round\"/><circle cx=\"50\" cy=\"68\" r=\"3.5\" fill=\"#fff\"/><circle cx=\"70\" cy=\"68\" r=\"3.5\" fill=\"#fff\"/><path d=\"M50 82 Q60 74 70 82\" stroke=\"#fff\" stroke-width=\"3.5\" fill=\"none\" stroke-linecap=\"round\"/>"],TP=[["عليك نور!"], ["تسلم إيدك", "يا بطل!"], ["يا سلام على", "الشطارة!"], ["إيه الجمال", "ده؟!"], ["برافو عليك", "يا دكتور!"], ["اللي يشوفك يقول", "إنك آينشتاين!"], ["ده إنت جامد", "على الآخر!"], ["دماغ تتلف", "في حرير!"], ["الشاطر بيعدّيها", "من أول مرة!"], ["ماشي زي", "الساعة يا ابني!"], ["أحسن حاجة فيك", "إنك بتركّز!"], ["يا واد يا", "چينيس!"]],TN=[["اللي ميعرفش", "يقول عدس!"], ["ده إنت نايم في", "العسل ولا إيه؟!"], ["يا نهار أبيض!"], ["ركّز يا بطل..", "السؤال مش بيعض!"], ["قربت.. بس", "لسه مش كده!"], ["إيه يا عم", "الغلاسة دي؟!"], ["جرّب تاني", "وشغّل العقل!"], ["الكتاب كان", "بيناديك!"], ["هي كيميا", "ولا ألغاز؟!"], ["خد نفس", "وفكّر من الأول!"], ["إنت بتهزر؟", "لا لا لا!"], ["مش مشكلة..", "الشاطر بيتعلم!"]];
+function mkSvg(f,l){const n=l.length,y=67-(n-1)*12;let t='';l.forEach((x,k)=>{t+='<text x="83" y="'+(y+k*24)+'" text-anchor="middle" direction="rtl" font-family="Cairo,Tahoma,Arial,sans-serif" font-size="15" font-weight="800" fill="#14213d">'+x+'</text>'});return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 262 124"><g transform="translate(150,10)">'+f+'</g><rect x="5" y="8" width="156" height="104" rx="22" fill="#fff" stroke="#14213d" stroke-width="3.5"/><path d="M159 46 L180 62 L159 80Z" fill="#fff" stroke="#14213d" stroke-width="3.5" stroke-linejoin="round"/><rect x="156" y="48" width="6" height="30" fill="#fff"/>'+t+'</svg>'}
+function stkImg(kind,k){const p=kind=='p',F=p?FP:FN,T=p?TP:TN,l=T[(k*5+(p?0:2))%T.length],im=document.createElement('img');im.src='data:image/svg+xml;charset=utf-8,'+encodeURIComponent(mkSvg(F[k%F.length],l));im.alt=l.join(' ');im.className='sk';return im}
+function stkBox(kind,k){const d=h('div',null,'skw');d.append(stkImg(kind,k));return d}
+function qEl(t,ty){const f=document.createDocumentFragment();if(ty!='صوب'||!/\[[^\]]+\]/.test(t)){f.append(document.createTextNode(t));return f}
+t=t.replace('صوب ما بين القوسين','صوب ما تحته خط');let last=0,m;const R=/\[([^\]]+)\]/g;while((m=R.exec(t))){if(m.index>last)f.append(document.createTextNode(t.slice(last,m.index)));const w=document.createElement('span');w.className='wr';w.textContent=m[1];f.append(w);last=m.index+m[0].length}
+if(last<t.length)f.append(document.createTextNode(t.slice(last)));return f}
+function clap(){try{const AC=window.AudioContext||window.webkitAudioContext,a=new AC();if(a.state=='suspended')a.resume();
+const T0=a.currentTime+.02,M=a.createGain();M.gain.value=.9;M.connect(a.destination);
+const nb=(dur)=>{const b=a.createBuffer(1,Math.max(1,a.sampleRate*dur|0),a.sampleRate),d=b.getChannelData(0);for(let j=0;j<d.length;j++)d[j]=Math.random()*2-1;return b};
+/* تصفيق: مئات الطرقات القصيرة المتداخلة بكثافة تزيد ثم تهدأ */
+const N=a.createBuffer(1,a.sampleRate*.05,a.sampleRate),nd=N.getChannelData(0);
+for(let k=0;k<110;k++){const t=T0+.15+Math.pow(Math.random(),.8)*3.6,env=Math.sin(Math.PI*Math.min(1,(t-T0-.15)/3.6)),b=a.createBuffer(1,a.sampleRate*.045,a.sampleRate),d=b.getChannelData(0);
+for(let j=0;j<d.length;j++)d[j]=(Math.random()*2-1)*Math.pow(1-j/d.length,2.5);
+const s=a.createBufferSource();s.buffer=b;const f=a.createBiquadFilter();f.type='bandpass';f.frequency.value=1200+Math.random()*2600;f.Q.value=.8;
+const g=a.createGain();g.gain.value=(.25+.55*env)*(.5+Math.random()*.5);s.connect(f).connect(g).connect(M);s.start(t)}
+/* هتاف تشجيع: عدة أصوات «يااااي» بحلق متعدد الترددات (فورمانت) مع صعود في النغمة */
+const voice=(t0,f0,dur,vol)=>{const o=a.createOscillator(),o2=a.createOscillator(),g=a.createGain(),mix=a.createGain();
+o.type='sawtooth';o2.type='square';
+o.frequency.setValueAtTime(f0*.8,t0);o.frequency.exponentialRampToValueAtTime(f0*1.25,t0+dur*.35);o.frequency.exponentialRampToValueAtTime(f0*1.1,t0+dur);
+o2.frequency.setValueAtTime(f0*.8*1.005,t0);o2.frequency.exponentialRampToValueAtTime(f0*1.25*1.005,t0+dur*.35);o2.frequency.exponentialRampToValueAtTime(f0*1.1*1.005,t0+dur);
+const lf=a.createOscillator(),lg=a.createGain();lf.frequency.value=5+Math.random()*2;lg.gain.value=f0*.015;lf.connect(lg);lg.connect(o.frequency);lg.connect(o2.frequency);lf.start(t0);lf.stop(t0+dur+.1);
+o.connect(mix);o2.connect(mix);
+[[800,1.0],[1250,.7],[2600,.35]].forEach(([fr,q])=>{const f=a.createBiquadFilter();f.type='bandpass';f.frequency.value=fr*(.92+Math.random()*.16);f.Q.value=5;const fg=a.createGain();fg.gain.value=q;mix.connect(f).connect(fg).connect(g)});
+g.gain.setValueAtTime(0,t0);g.gain.linearRampToValueAtTime(vol,t0+.12);g.gain.setValueAtTime(vol,t0+dur*.6);g.gain.linearRampToValueAtTime(0,t0+dur);
+g.connect(M);o.start(t0);o2.start(t0);o.stop(t0+dur+.1);o2.stop(t0+dur+.1)};
+[[0,200,1.6],[.05,260,1.5],[.12,330,1.7],[.2,240,1.4],[.3,300,1.6],[.4,380,1.3],[.55,220,1.5]].forEach(([dt,f,d])=>voice(T0+.1+dt,f,d,.07));
+/* صفير تشجيع قصير */
+[.3,.75].forEach(dt=>{const o=a.createOscillator(),g=a.createGain();o.type='sine';const t=T0+dt;o.frequency.setValueAtTime(1800,t);o.frequency.exponentialRampToValueAtTime(3000,t+.35);
+g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(.06,t+.05);g.gain.linearRampToValueAtTime(0,t+.4);o.connect(g).connect(M);o.start(t);o.stop(t+.45)});
+setTimeout(()=>{try{a.close()}catch(e){}},6000)}catch(e){}}
+function party(txt,k){const l=[];
+"🎉🎊⭐🥳🏆✨🎈".split("").forEach(()=>0);["🎉","🎊","⭐","🥳","🏆","✨","🎈","🎉","🎊","⭐","🥳","✨"].forEach((e,k)=>{const s=h("span",e,"s");s.style.left=(5+k*8)+"%";s.style.animationDelay=(k%4*.3)+"s";document.body.append(s);l.push(s)});clap();setTimeout(()=>l.forEach(n=>n.remove()),5000)}
+function home(){app.replaceChildren();
+const c=h("div",null,"c");c.append(h("h2","اختار نوع الأسئلة 👇","q"));
+const m=S.m,e=S.e,dm=Object.keys(m.t).length,de=Object.keys(e.s).length;
+c.append(h("button","📝 أسئلة موضوعية: اختيار + صح/خطأ ("+M.length+" سؤال)"+(dm?" – كمّل من سؤال "+(m.i+1):""),"big",()=>mcq()));
+c.append(h("button","✍️ أسئلة مقالية بإجاباتها ("+E.length+" سؤال)"+(de||e.i?" – كمّل من سؤال "+(e.i+1):""),"big",()=>ess()));
+app.append(c)}
+function bar(name,reset){const r=h("div",null,"row");r.append(h("button","🏠 الصفحة الرئيسية",null,home),h("button","🔄 ابدأ من البداية وأعد ضبط الأسئلة",null,reset));return r}
+function nav(S2,n,go){const r=h("div",null,"row nvr");const p=h("button","▶ السابق",null,()=>go(-1));const x=h("button","التالي ◀","pri",()=>go(1));if(S2.i==0)p.disabled=true;if(S2.i==n-1)x.disabled=true;r.append(p,h("div","أتمنى أن تفيدكم المراجعة وأسألكم الدعاء لزوجتي بالشفاء العاجل 🤲🏻","dua"),x);return r}
+function score(){let s=0;Object.values(S.m.t).forEach(t=>{if(t.ok)s+=t.n==0?1:.5});return s}
+function mcq(){app.replaceChildren();const i=S.m.i,q=M[i],t=S.m.t[i]||{n:0,w:[],d:0,ok:0};
+app.append(bar(0,()=>{S.m={i:0,t:{}};sv();mcq()}));
+const sc=h("div",null,"sc");sc.append(h("span","سؤال "+(i+1)+" من "+M.length),h("span","الدرجة: "+score()));app.append(sc);
+const c=h("div",null,"c"),qq=h("div",null,"q");qq.append(h("span",i+1,"b"),document.createTextNode(q[0]));c.append(qq);
+q[1].forEach((o,j)=>{const b=h("button",o,"o");if(t.w.includes(j)){b.classList.add("no");b.textContent="✖ "+o;b.disabled=true}
+if(t.d&&j==q[2]){b.classList.add("ok");b.textContent="✔ "+o}if(t.d)b.disabled=true;
+b.onclick=()=>pick(j);c.append(b)});
+if(t.d&&t.ok){c.append(h("div","✅ إجابة صحيحة","msg g"));c.append(stkBox("p",i+t.n+1))}
+else if(t.n==1)c.append(stkBox("n",i),h("div","🔁 جرّب تاني","msg e"));
+else if(t.n>=2)c.append(stkBox("n",i+2),h("div","✅ الإجابة الصحيحة: "+q[1][q[2]],"msg g"));
+if(t.d&&q[3])c.append(h("div","التصويب: "+q[3],"ans"));app.append(c,nav(S.m,M.length,d=>{S.m.i+=d;sv();mcq()}),mapEl(M.length,S.m.i,mst,j=>{S.m.i=j;sv();mcq()}))}
+function pick(j){const i=S.m.i,q=M[i],t=S.m.t[i]||(S.m.t[i]={n:0,w:[],d:0,ok:0});
+if(j==q[2]){const first=t.n==0;t.d=1;t.ok=1;sv();mcq();sk2();if(first)party(PP[i%5],i)}
+else{t.n++;t.w.push(j);if(t.n>=2)t.d=1;sv();mcq();sk2()}}
+function sk2(){const e=document.querySelector(".skw");if(e)setTimeout(()=>{try{e.scrollIntoView({block:"nearest",behavior:"smooth"})}catch(x){}},60)}
+function ess(){app.replaceChildren();const i=S.e.i,q=E[i],sh=S.e.s[i];
+app.append(bar(0,()=>{S.e={i:0,s:{}};sv();ess()}));
+const sc=h("div",null,"sc");sc.append(h("span","سؤال "+(i+1)+" من "+E.length));app.append(sc);
+const c=h("div",null,"c"),qq=h("div",null,"q");qq.append(h("span",i+1,"b"),document.createTextNode(q[0]));c.append(qq);
+if(sh){const a=h("div",null,"ans");q[1].split("\n").forEach((l,k)=>{if(k)a.append(document.createElement("br"));a.append(document.createTextNode(l))});a.dir="rtl";c.append(a)}
+else c.append(h("button","👁️ اظهر الإجابة","pri",()=>{S.e.s[i]=1;sv();ess()}));
+app.append(c,nav(S.e,E.length,d=>{S.e.i+=d;sv();ess()}))}
+function mst(i){const t=S.m.t[i];if(!t||!t.d)return'';return t.ok?(t.n==0?'ok':'w2'):'no'}
+function mapEl(n,cur,st,go){const d=h('details');d.open=!!window.__mo;d.ontoggle=()=>{window.__mo=d.open};d.append(h('summary','🗺️ خريطة الأسئلة'));const g=h('div',null,'mp');for(let k=0;k<n;k++){const s=st(k);g.append(h('button',(k+1)+({ok:'✔',w2:'½',no:'✖'}[s]||''),s+(k==cur?' cur':''),()=>go(k)))}d.append(g);return d}
+function home(){app.replaceChildren();const c=h('div',null,'c');c.append(h('h2','اختار نوع الأسئلة 👇','q'));const dm=Object.keys(S.m.t).length;c.append(h('button','📝 أسئلة موضوعية: اختيار + صح/خطأ ('+M.length+' سؤال)'+(dm?' – كمّل من سؤال '+(S.m.i+1):''),'big',()=>mcq()));c.append(h('button','✍️ أسئلة مقالية بإجاباتها ('+E.length+' سؤال)','big',()=>ess()));app.append(c)}
+function list(t){return E.map((e,i)=>({e,i})).filter(x=>x.e.t==t&&S.e.sel[x.e.l-1]).sort((a,b)=>a.e.l-b.e.l||a.i-b.i)}
+function ess(){app.replaceChildren();app.append(bar(0,()=>{S.e={sel:[1,1,1],i:{},s:{}};sv();ess()}));const c=h('div',null,'c');c.append(h('div','حدد الدروس 👇','q'));const row=h('div',null,'row');
+const cb=(txt,chk,fn)=>{const l=document.createElement('label');const x=document.createElement('input');x.type='checkbox';x.checked=!!chk;x.onchange=()=>fn(x.checked);l.append(x,document.createTextNode(' '+txt));l.style.cssText='margin-left:14px;cursor:pointer;font-weight:700';return l};
+[1,2,3].forEach(k=>row.append(cb(LN[k],S.e.sel[k-1],v=>{S.e.sel[k-1]=v?1:0;sv();ess()})));row.append(cb('كل الدروس',S.e.sel.every(Boolean),v=>{const n=v?1:0;S.e.sel=[n,n,n];sv();ess()}));c.append(row);
+if(!S.e.sel.some(Boolean))c.append(h('div','اختر درساً واحداً على الأقل','msg e'));app.append(c);
+const g=h('div',null,'c');g.append(h('div','اختر نوع الأسئلة 👇','q'));TY.forEach(t=>{const n=list(t).length,b=h('button',TL[t]+' ('+n+')','big',()=>essList(t));if(!n)b.disabled=true;g.append(b)});app.append(g)}
+function essList(t){app.replaceChildren();const L=list(t),r=h('div',null,'row');r.append(h('button','🏠 الصفحة الرئيسية',null,home),h('button','⬅ أنواع المقالي',null,ess),h('button','🔄 ابدأ هذا النوع من الأول',null,()=>{S.e.i[t]=0;L.forEach(x=>delete S.e.s[x.i]);sv();essList(t)}));app.append(r);
+if(!L.length){app.append(h('div','لا توجد أسئلة للدروس المحددة','c'));return}
+const i=Math.min(S.e.i[t]||0,L.length-1),{e,i:gi}=L[i];const sc=h('div',null,'sc');sc.append(h('span',TL[t]+' – سؤال '+(i+1)+' من '+L.length),h('span',LN[e.l]));app.append(sc);
+const c=h('div',null,'c'),qq=h('div',null,'q');qq.append(h('span',i+1,'b'),qEl(e[0],e.t));c.append(qq);
+if(S.e.s[gi]){const a=h('div',null,'ans');Array.isArray(e[1])?a.append(tbl(e[1])):e[1].split('\n').forEach(l=>a.append(lineEl(l)));c.append(a)}else c.append(h('button','👁️ اظهر الإجابة','pri',()=>{S.e.s[gi]=1;sv();essList(t)}));
+app.append(c,nav({i:i},L.length,d=>{S.e.i[t]=i+d;sv();essList(t)}),mapEl(L.length,i,k=>S.e.s[L[k].i]?'ok':'',j=>{S.e.i[t]=j;sv();essList(t)}))}
+function tbl(r){const w=h('div',null,'tw'),t=document.createElement('table');t.className='tb';t.dir='rtl';r.forEach((row,k)=>{const tr=document.createElement('tr');row.forEach(x=>{const c=document.createElement(k?'td':'th');cellFill(c,x,k);tr.append(c)});t.append(tr)});w.append(t);return w}
+const H='وجه المقارنة',CT=[
+[[H,'احتراق الفلزات','احتراق اللافلزات'],['النواتج','أكاسيد قاعدية يذوب بعضها في الماء مكوناً قلوياً','أكاسيد حامضية تذوب في الماء مكونة حمضاً'],['تأثير محاليلها على ورقة دوار الشمس','تزرق الورقة الحمراء','تحمر الورقة الزرقاء'],['مثال','احتراق الماغنسيوم في الأكسجين: 2Mg + O₂ →(Δ) 2MgO','احتراق الكربون (الفحم) في الأكسجين: C + O₂ →(Δ) CO₂']],
+[[H,'ثاني أكسيد الكربون CO₂','أول أكسيد الكربون CO'],['ظروف تكونهما','يتكون عند الاحتراق التام في وفرة من الأكسجين','يتكون عند الاحتراق غير التام ونقص الأكسجين'],['خواصهما','لا يشتعل ولا يساعد على الاشتعال – عديم اللون والرائحة','غاز سام – عديم اللون والرائحة']],
+[[H,'الاحتراق التام','الاحتراق غير التام'],['كمية الأكسجين المتاحة','وفرة من الأكسجين','نقص الأكسجين'],['النواتج المتكونة','CO₂ وبخار الماء H₂O وحرارة','CO والسناج C وبخار الماء H₂O وحرارة'],['لون ونوع اللهب','لهب أزرق (نظيف غير مدخن)','لهب أصفر أو برتقالي (مدخن)']],
+[[H,'احتراق الغاز الطبيعي','احتراق الفحم الحجري'],['ثاني أكسيد الكربون CO₂','كمية أقل','كمية أكبر'],['أكاسيد الكبريت','ينعدم تقريباً انبعاثها','تنبعث أكاسيد الكبريت الخانقة'],['دقائق الكربون (السناج)','ينعدم تقريباً','تنبعث دقائق السناج الأسود']],
+[[H,'المحول الحفزي','أجهزة غسل الغازات'],['مكان الاستخدام','محرك السيارة','المصانع'],['الغازات المعالجة','أول أكسيد الكربون وأكاسيد النيتروجين','الغازات الحامضية السامة مثل ثاني أكسيد الكبريت']],
+[[H,'التدخين المباشر','التدخين السلبي'],['التعريف','قيام المدخن باستنشاق الدخان الناتج عن احتراق التبغ أو رذاذ الأجهزة الإلكترونية وإدخاله لرئتيه بشكل مقصود','استنشاق الشخص غير المدخن للدخان الذي ينفثه المدخن أو المتصاعد من طرف السيجارة المشتعلة'],['الأضرار','أضرار بالغة ومباشرة للرئتين والقلب','نفس مخاطر أمراض القلب والجهاز التنفسي']],
+[[H,'التدخين التقليدي','التدخين الإلكتروني'],['التعريف','يعتمد على حرق أوراق التبغ الموجودة في السيجارة','يعتمد على تسخين سائل يحتوي على النيكوتين بجهاز إلكتروني بنسبة نيكوتين مرتفعة'],['الأضرار','أضرار بالغة ومباشرة للرئتين والقلب','سرعة الإدمان – اضطرابات حادة في وظائف القلب والجهاز العصبي']],
+[[H,'الدخان المستنشق','الدخان المتصاعد من طرف السيجارة'],['تركيز المواد السامة','أقل تركيزاً لمروره على الفلتر','تركيز أعلى لعدم مروره على فلتر السيجارة'],['المواد المسرطنة','تركيزات أقل','تركيزات عالية من الغازات السامة والمواد المسرطنة']]];
+E.filter(e=>e.t=='قارن بين').forEach((e,k)=>{e[1]=CT[k]});
+const RX=/((?:[A-Za-z0-9₀-₉⁰-⁹²³¹⁺⁻↑↓Δ]|\([A-Za-z0-9₀-₉]+\))+(?:\s*(?:\+|→\(Δ\)|→)\s*(?:[A-Za-z0-9₀-₉⁰-⁹²³¹⁺⁻↑↓Δ]|\([A-Za-z0-9₀-₉]+\))+)*)/g;
+function bidi(root){const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT),ns=[];while(w.nextNode())ns.push(w.currentNode);ns.forEach(n=>{const p=n.parentNode;if(p.closest&&p.closest('[dir=ltr]'))return;const t=n.nodeValue;if(!/[A-Za-z]/.test(t))return;const f=document.createDocumentFragment();let last=0,m,c=0;RX.lastIndex=0;while((m=RX.exec(t))){if(!/[A-Za-zΔ]/.test(m[0]))continue;c++;if(m.index>last)f.append(t.slice(last,m.index));const s=document.createElement('span');s.dir='ltr';s.className='ltr';s.textContent=m[0];f.append(s);last=m.index+m[0].length}if(!c)return;if(last<t.length)f.append(t.slice(last));p.replaceChild(f,n)})}
+const ob=new MutationObserver(()=>{ob.disconnect();bidi(app);ob.observe(app,{childList:true,subtree:true});eqFit(app)});ob.observe(app,{childList:true,subtree:true});
+/* ===== المعادلات: شروط فوق السهم + أسماء عربية + معادلة لفظية ===== */
+const NM={'Mg':'ماغنسيوم','O₂':'أكسجين','MgO':'أكسيد الماغنسيوم','Zn':'خارصين','Cu':'نحاس','CuSO₄':'كبريتات النحاس II','ZnSO₄':'كبريتات الخارصين','CuO':'أكسيد النحاس II','Fe':'حديد','Fe₃O₄':'أكسيد الحديد المغناطيسي','FeSO₄':'كبريتات الحديد II','FeCl₂':'كلوريد الحديد II','HCl':'حمض الهيدروكلوريك','MgCl₂':'كلوريد الماغنسيوم','ZnCl₂':'كلوريد الخارصين','H₂':'هيدروجين','Na':'صوديوم','H₂O':'ماء','NaOH':'هيدروكسيد الصوديوم','Na₂CO₃':'كربونات الصوديوم','NaCl':'كلوريد الصوديوم','CO₂':'ثاني أكسيد الكربون','CO':'أول أكسيد الكربون','C':'كربون','CH₄':'ميثان','HgO':'أكسيد الزئبق II','Hg':'زئبق','CaCO₃':'كربونات الكالسيوم','CaO':'أكسيد الكالسيوم','CaCl₂':'كلوريد الكالسيوم','AgNO₃':'نترات الفضة','NaNO₃':'نترات الصوديوم','AgCl':'كلوريد الفضة','Ag':'فضة','Cu(NO₃)₂':'نترات النحاس II','H₂SO₄':'حمض الكبريتيك','Na₂SO₄':'كبريتات الصوديوم','Ca(OH)₂':'هيدروكسيد الكالسيوم','CaSO₃':'كبريتيت الكالسيوم','SO₂':'ثاني أكسيد الكبريت','Na₂SO₃':'كبريتيت الصوديوم','N₂':'نيتروجين','NO':'أكسيد النيتريك','NO₂':'ثاني أكسيد النيتروجين','Hb':'هيموجلوبين','HbCO':'كربوكسي هيموجلوبين','H⁺':'أيون الهيدروجين','Cl⁻':'أيون الكلوريد','Na⁺':'أيون الصوديوم','OH⁻':'أيون الهيدروكسيد','S':'كبريت','KClO₃':'كلورات البوتاسيوم','KCl':'كلوريد البوتاسيوم','HNO₂':'حمض النيتروز','HNO₃':'حمض النيتريك'};
+const isHeat=k=>/^(heat|حرارة)$/i.test(k);
+const eqNm=(o)=>isHeat(o.f)?'طاقة حرارية':(o.f=='C'&&o.p?'كربون (سناج)':(NM[o.f]||''));
+const eqWn=(o)=>isHeat(o.f)?'حرارة':eqNm(o);
+const cW=c=>{c=(c||'').trim();if(!c)return'';if(/^Δ$|heat/i.test(c))return'حرارة';if(/^dil/i.test(c))return'مخفف';if(/Pt|Pd|Rh/.test(c))return'عامل حفاز';return''};
+const cF=c=>{c=(c||'').trim();return/^dil/i.test(c)?'dil.':c};
+function isEq(l){const m=l.replace(/^[أ-ي]\)\s*/,'').replace(/حرارة/g,'').trim();return m.includes('→')&&/^[A-Z0-9]/.test(m)&&/^[\sA-Za-z0-9₀-₉⁰-⁹²³¹⁺⁻()\[\]↑↓Δ+→,.]+$/.test(m)}
+function eqParse(l){const lab=(l.match(/^([أ-ي]\))\s*/)||[])[1]||'';l=l.replace(/^[أ-ي]\)\s*/,'');const m=l.match(/^(.*?)\s*→(?:\(([^)]*)\))?\s*(.*)$/);
+ const side=(s,p)=>s.split(/\s+\+\s+/).map(t=>{t=t.trim();const r=t.match(/^(\d*)\s*(.+?)([↑↓]?)$/);return{co:r[1],f:r[2],mk:r[3],p}});
+ return{lab,L:side(m[1],0),R:side(m[3],1),c:m[2]||''}}
+function eqCol(t,f,n){const d=h('div',null,'col');d.append(h('div',t||'','t'),h('div',f,'f'),h('div',n||'','n'));return d}
+function eqArrow(c,rv){const d=h('div',null,'col'),w=h('div',null,'fw');w.append(h('div',null,'ar'+(rv?' rv':'')));d.append(h('div',c,'t'),w,h('div','','n'));return d}
+function eqEl(line){const p=eqParse(line),x=h('div',null,'eqx'),b=h('div',null,'eqb');b.dir='ltr';const bi=h('div',null,'in');b.append(bi);
+ if(p.lab)bi.append(eqCol('',p.lab,''));
+ const fm=o=>(o.co||'')+o.f+o.mk;
+ const build=(box,L,R,arrow,txt)=>{const g=(...k)=>{const d=h('div',null,'grp');d.append(...k);return d};const plus=()=>eqCol('','+','');
+  L.forEach((o,i)=>box.append(i?g(plus(),txt(o)):txt(o)));
+  box.append(g(arrow,txt(R[0])));R.slice(1).forEach(o=>box.append(g(plus(),txt(o))))};
+ build(bi,p.L,p.R,eqArrow(cF(p.c),0),o=>eqCol('',fm(o),eqNm(o)));x.append(b);
+ const all=p.L.concat(p.R),ok=all.every(o=>eqWn(o));
+ if(ok){const w=h('div',null,'weq');w.dir='rtl';const wi=h('div',null,'in');w.append(wi);build(wi,p.L,p.R,eqArrow(cW(p.c),1),o=>eqCol('',eqWn(o),''));x.append(h('div','المعادلة اللفظية:','wl'),w)}
+ else{(window.__miss=window.__miss||[]).push(line)}
+ return x}
+function lineEl(l){return isEq(l)?eqEl(l):h('div',l)}
+function cellFill(c,x,k){const i=x.indexOf(': ');if(k&&i>0&&x.includes('→')&&isEq(x.slice(i+2)))c.append(document.createTextNode(x.slice(0,i+1)),eqEl(x.slice(i+2)));else c.textContent=x}
+function eqFit(root){root.querySelectorAll('.eqb,.weq').forEach(b=>{const i=b.firstElementChild;if(!i)return;i.style.zoom='';const need=i.offsetWidth,av=b.clientWidth-12;if(av>0&&need>av)i.style.zoom=av/need})}
+addEventListener('resize',()=>eqFit(document));addEventListener('load',()=>eqFit(document));try{document.fonts.ready.then(()=>eqFit(document))}catch(e){}
+const EXPL=(()=>{let s='<g transform="translate(150 125)"><polygon class="exs" points="0,-70 14,-24 60,-40 30,-6 70,18 22,22 30,66 0,34 -30,66 -22,22 -70,18 -30,-6 -60,-40 -14,-24" fill="#ffd54a" stroke="#e8590c" stroke-width="3"/><circle class="exc" r="34" fill="#fff"/></g>';
+[[-110,-90],[100,-95],[-120,10],[125,0],[-70,-120],[60,-125],[-30,-100],[30,-110],[-95,-40],[95,-45]].forEach((v,k)=>{s+='<circle class="sp" style="--x:'+v[0]+'px;--y:'+v[1]+'px;animation-delay:'+(k%3*.05)+'s" cx="150" cy="125" r="'+(3+k%3)+'" fill="'+['#ff5722','#ffc107','#fff'][k%3]+'"/>'});
+return s+'<text class="bm" x="150" y="38" text-anchor="middle" font-size="26" font-weight="800" fill="#e8590c" stroke="#fff" stroke-width="5" paint-order="stroke" direction="rtl" font-family="Cairo,Tahoma,sans-serif">بووم! 💥</text>'})();
+
+/* ===== المعمل التفاعلي ===== */
+const BN='<rect x="0" y="212" width="300" height="18" fill="#cdbb9f"/>',GL='stroke="#6f7f9c" stroke-width="3"';
+function lq(x,y,w,hh,c0,c1,p,d,o,beg){const a=(p&&!d)?'<animate attributeName="fill" from="'+c0+'" to="'+c1+'" dur="2.4s" begin="'+(beg||0)+'s" fill="freeze"/>':'';return '<rect x="'+x+'" y="'+y+'" width="'+w+'" height="'+hh+'" fill="'+(d?c1:c0)+'" opacity="'+(o||.85)+'">'+a+'</rect>'}
+function fade(r,p,d,beg,mx){mx=mx||1;return '<g opacity="'+(d?mx:0)+'">'+((p&&!d)?'<animate attributeName="opacity" from="0" to="'+mx+'" dur="2.4s" begin="'+(beg||0)+'s" fill="freeze"/>':'')+r+'</g>'}
+const bub=(x,y,n)=>{let s='';for(let k=0;k<n;k++)s+='<circle class="bb" style="animation-delay:'+(k*.25)+'s" cx="'+(x+(k%4)*9-13)+'" cy="'+y+'" r="'+(2.5+k%3)+'" fill="#fff" stroke="#8aa0c0"/>';return s};
+const BRN=(cx,l,k)=>'<rect x="'+(cx-25)+'" y="198" width="50" height="14" rx="4" fill="#4b5563"/><rect x="'+(cx-7)+'" y="150" width="14" height="48" fill="#6b7280"/><rect x="'+(cx-11)+'" y="168" width="22" height="6" fill="#9ca3af"/>'+(l?'<g transform="translate('+cx+' 150) scale(1 '+k+') translate(-150 -150)"><g class="fk"><path d="M150 150C130 126 140 104 150 82C160 104 170 126 150 150Z" fill="#ffa21f" opacity=".9"/><path d="M150 150C142 136 146 122 150 110C154 122 158 136 150 150Z" fill="#3d9bff"/></g></g>':'');
+const cl=(x,y,w,hh,cols,p,d,o)=>lq(x,y,w,hh,cols[Math.max(p-1,0)],cols[Math.min(p,cols.length-1)],p>0,d,o);
+const bk=(inner)=>inner+'<path d="M85 80V198Q85 206 93 206H207Q215 206 215 198V80" fill="none" '+GL+' stroke-linecap="round"/>';
+const LBX=[
+{n:'احتراق شريط الماغنسيوم في الهواء',ic:'⚡',eq:['2Mg + O₂ →(Δ) 2MgO'],
+ it:[{id:'lt',l:'🔥 ولاعة'},{id:'mg',l:'🎗️ شريط ماغنسيوم'},{id:'cu',l:'🟫 سلك نحاس',bad:'النحاس لا يحترق بلهب أبيض ساطع بل تتكون طبقة سوداء من CuO فقط. المطلوب هنا شريط الماغنسيوم.'},{id:'wt',l:'💧 ماء',bad:'الماء ليس من مواد هذا التفاعل، والاحتراق يحتاج وقوداً (فلز) + أكسجين + حرارة.'}],
+ z:[{id:'burner',x:112,y:168,w:76,h:46,l:'الموقد'},{id:'flame',x:108,y:50,w:84,h:114,l:'منطقة اللهب'}],
+ s:[{i:'lt',z:'burner',t:'أشعل موقد بنزن: اسحب الولاعة إلى الموقد.',zh:'الولاعة تُقرَّب من فوهة الموقد.',ok:'اشتعل اللهب الأزرق 🔥 الماغنسيوم يحتاج حرارة ليصل لدرجة الاشتعال.',lit:1},
+    {i:'mg',z:'flame',t:'أمسك شريط الماغنسيوم بالملقط وقرّبه إلى اللهب.',zh:'الشريط يوضع في اللهب نفسه.',ok:'وصل الشريط لدرجة الاشتعال وبدأ يحترق!'}],
+ sc:(p,d,l)=>{let s=BN+'<rect x="125" y="198" width="50" height="14" rx="4" fill="#4b5563"/><rect x="143" y="150" width="14" height="48" fill="#6b7280"/><rect x="139" y="168" width="22" height="6" fill="#9ca3af"/>';
+  if(l)s+='<g class="fk"><path d="M150 150C130 126 140 104 150 82C160 104 170 126 150 150Z" fill="#ffa21f" opacity=".9"/><path d="M150 150C142 136 146 122 150 110C154 122 158 136 150 150Z" fill="#3d9bff"/></g>';
+  s+='<ellipse cx="245" cy="206" rx="34" ry="6" fill="#dbeafe" stroke="#6f7f9c" stroke-width="2"/>';
+  if(p>=2){s+='<line x1="150" y1="14" x2="150" y2="104" stroke="#555" stroke-width="5" stroke-linecap="round"/>';
+    s+=d?'<rect x="141" y="100" width="18" height="4" fill="#eee"/><path d="M220 205Q245 172 270 205Z" fill="#fff" stroke="#bbb" stroke-width="1.5"/>':'<rect x="132" y="99" width="36" height="5" rx="2" fill="#d1d5db"/><circle class="gl" cx="150" cy="102" r="44" fill="#fff"/><circle cx="150" cy="102" r="16" fill="#fff"/>'}
+  return s},
+ obs:'يحترق الشريط بلهب أبيض ساطع مبهر (لا تنظر إليه مباشرة) ويتكون مسحوق أبيض.',
+ con:'اتحد الماغنسيوم مع أكسجين الهواء وتكوّن أكسيد الماغنسيوم MgO (أكسيد قاعدي). التفاعل اتحاد مباشر (احتراق) طارد للحرارة والضوء.',
+ q:t=>/الماغنسيوم/.test(t)&&/احتراق|إشعال|وهج/.test(t)},
+{n:'الخارصين مع محلول كبريتات النحاس',ic:'🟦',eq:['Zn + CuSO₄ → ZnSO₄ + Cu↓'],
+ it:[{id:'zn',l:'🔩 ساق خارصين'},{id:'cu',l:'🟫 ساق نحاس',bad:'النحاس لا يحل محل النحاس في محلول أملاحه. المطلوب فلز أنشط من النحاس.'},{id:'ag',l:'⚪ سلك فضة',bad:'الفضة أقل نشاطاً من النحاس (تلي النحاس في المتسلسلة) فلا تحل محله.'}],
+ z:[{id:'bk',x:80,y:64,w:140,h:146,l:'كأس CuSO₄ الزرقاء'}],
+ s:[{i:'zn',z:'bk',t:'اغمر ساق الخارصين في محلول كبريتات النحاس.',zh:'الساق تُغمر داخل الكأس.',ok:'بدأ الخارصين يحل محل النحاس في المحلول.'}],
+ sc:(p,d)=>{let s=BN+lq(88,118,124,86,'#3fa7e0','#dbeef7',p,d);
+  if(p){s+='<rect x="142" y="36" width="14" height="150" rx="3" fill="#aeb6c2"/>'+fade('<rect x="139" y="118" width="20" height="70" rx="5" fill="#c0562a" />',p,d)+fade('<circle cx="110" cy="198" r="4" fill="#c0562a" /><circle cx="188" cy="197" r="5" fill="#c0562a" /><circle cx="170" cy="199" r="3" fill="#c0562a" />',p,d)}
+  return bk(s)},
+ obs:'يزول اللون الأزرق للمحلول تدريجياً ويترسب النحاس الأحمر على ساق الخارصين.',
+ con:'الخارصين أنشط من النحاس فحل محله: تفاعل إحلال بسيط. الخارصين عامل مختزل (يفقد إلكترونات) وأيونات Cu²⁺ عامل مؤكسد.',
+ q:t=>/كبريتات النحاس/.test(t)&&/خارصين|الخارصين/.test(t)},
+{n:'كربونات الصوديوم مع حمض HCl (كشف CO₂)',ic:'🫧',eq:['Na₂CO₃ + 2HCl →(dil.) 2NaCl + H₂O + CO₂↑','CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O'],
+ it:[{id:'tb',l:'🧪 أنبوب توصيل'},{id:'hcl',l:'🧴 حمض HCl مخفف'},{id:'oh',l:'🧴 محلول NaOH',bad:'هيدروكسيد الصوديوم قلوي ولا يعطي غازاً مع كربونات الصوديوم.'},{id:'wt',l:'💧 ماء مقطر',bad:'الماء النقي لا يسبب فواراناً مع كربونات الصوديوم.'}],
+ z:[{id:'fl',x:25,y:52,w:130,h:158,l:'الدورق (Na₂CO₃)'}],
+ s:[{i:'tb',z:'fl',t:'وصّل الدورق بأنبوب التوصيل المغموس في ماء الجير أولاً، حتى لا يفلت الغاز.',zh:'الأنبوب يُركَّب في سدادة فوهة الدورق.',ok:'تم توصيل الجهاز بماء الجير.'},
+    {i:'hcl',z:'fl',t:'أضف حمض HCl المخفف إلى مسحوق كربونات الصوديوم.',zh:'الحمض يُضاف على المسحوق داخل الدورق.',ok:'حدث فوران وتصاعد غاز CO₂ إلى ماء الجير!'}],
+ sc:(p,d)=>{let s=BN+'<polygon points="42,194 138,194 141,203 39,203" fill="#fff" stroke="#cfd6e4"/>';
+  if(p>=2)s+='<polygon points="49,165 131,165 142,190 140,203 40,203 38,190" fill="#cfe6f7" opacity=".85"/>'+bub(90,150,6);
+  s+='<path d="M75 70V105L38 190Q32 205 48 205H132Q148 205 142 190L105 105V70" fill="none" '+GL+' stroke-linejoin="round"/>';
+  s+='<path d="M207 140H263V195Q263 205 235 205Q207 205 207 195Z" fill="#dff1fb" opacity=".8"/>';
+  if(p>=2)s+=fade('<path d="M207 140H263V195Q263 205 235 205Q207 205 207 195Z" fill="#f3f1e6"/>',1,d,.6,.95);
+  s+='<path d="M205 105V195Q205 207 235 207Q265 207 265 195V105" fill="none" '+GL+'/>';
+  if(p>=1)s+='<rect x="72" y="58" width="36" height="14" rx="3" fill="#b4691f"/><path d="M90 58V36H236V172" fill="none" stroke="#9aa6b8" stroke-width="5" stroke-linejoin="round"/>';
+  if(p>=2)s+=bub(236,165,4);
+  return s},
+ obs:'يحدث فوران وتتصاعد فقاعات غاز، ويتعكر ماء الجير الرائق (يصير لبنياً).',
+ con:'الغاز المتصاعد هو ثاني أكسيد الكربون CO₂ (يعكر ماء الجير). التفاعل إحلال مزدوج بين الملح والحمض.',
+ q:t=>/كربونات الصوديوم/.test(t)&&/HCl/.test(t)},
+{n:'نترات الفضة مع كلوريد الصوديوم (ترسيب)',ic:'⚪',eq:['AgNO₃ + NaCl → NaNO₃ + AgCl↓'],
+ it:[{id:'ag',l:'🧴 محلول AgNO₃'},{id:'na',l:'🧴 محلول NaNO₃',bad:'نترات الصوديوم أحد نواتج التفاعل ولا تكوّن راسباً مع كلوريد الصوديوم.'},{id:'wt',l:'💧 ماء مقطر',bad:'الماء لن يعطي راسباً، فهو يخفف المحلول فقط.'}],
+ z:[{id:'bk',x:80,y:64,w:140,h:146,l:'كأس NaCl'}],
+ s:[{i:'ag',z:'bk',t:'أضف محلول نترات الفضة إلى محلول كلوريد الصوديوم.',zh:'المحلول يُضاف داخل الكأس.',ok:'اتحدت أيونات Ag⁺ مع Cl⁻ وبدأ الراسب يتكون.'}],
+ sc:(p,d)=>{let s=BN+lq(88,118,124,86,'#e6f2fa','#e6f2fa',0,0,.8);
+  if(p)s+=fade('<rect x="88" y="118" width="124" height="86" fill="#fff"/>',p,d,0,.55)+fade('<rect x="92" y="188" width="116" height="16" rx="6" fill="#fff" stroke="#cfd6e4" />',p,d,1);
+  return bk(s)},
+ obs:'يتكون راسب أبيض (جبني) من كلوريد الفضة AgCl، ويتحول إلى اللون البنفسجي إذا تعرض للضوء.',
+ con:'تفاعل إحلال مزدوج (ترسيب): تبادلت الأيونات مكانها فتكوّن AgCl غير الذائب.',
+ q:t=>/نترات الفضة|AgNO₃/.test(t)&&/كلوريد الصوديوم|NaCl/.test(t)},
+{n:'الفلزات النشطة مع حمض HCl المخفف (الكشف عن H₂)',ic:'🧯',eq:['Mg + 2HCl →(dil.) MgCl₂ + H₂↑'],
+ it:[{id:'mg',l:'🎗️ شريط ماغنسيوم'},{id:'sp',l:'🔥 شظية مشتعلة'},{id:'cu',l:'🟫 شريط نحاس',bad:'النحاس يلي الهيدروجين في متسلسلة النشاط فلا يحل محله ولا يحدث تفاعل.'},{id:'ag',l:'⚪ سلك فضة',bad:'الفضة أقل نشاطاً من الهيدروجين فلا تتفاعل مع الحمض المخفف.'}],
+ z:[{id:'tube',x:100,y:92,w:100,h:118,l:'أنبوب فيه HCl'},{id:'mouth',x:100,y:30,w:100,h:58,l:'فوهة الأنبوب'}],
+ s:[{i:'mg',z:'tube',t:'ضع شريط الماغنسيوم (فلز نشط يسبق الهيدروجين) في أنبوب حمض HCl المخفف.',zh:'الشريط يوضع داخل الأنبوب الذي به الحمض.',ok:'بدأت فقاعات غاز تتصاعد: الماغنسيوم يحل محل هيدروجين الحمض.'},
+    {i:'sp',z:'mouth',t:'قرّب شظية مشتعلة من فوهة الأنبوب للكشف عن الغاز.',zh:'الشظية تُقرَّب من فوهة الأنبوب لا من السائل.',ok:'سُمعت فرقعة! الغاز هو الهيدروجين.'}],
+ sc:(p,d)=>{let s=BN+'<rect x="127" y="110" width="46" height="93" fill="#e6f2fa" opacity=".85"/>';
+  if(p>=1)s+='<rect x="142" y="140" width="7" height="58" rx="2" fill="#aeb6c2" transform="rotate(8 145 170)"/>'+bub(150,150,7);
+  s+='<path d="M125 70V190Q125 204 150 204Q175 204 175 190V70" fill="none" '+GL+'/>';
+  if(p>=2&&!d)s+='<line x1="215" y1="22" x2="156" y2="62" stroke="#8b5a2b" stroke-width="4" stroke-linecap="round"/><g class="fk"><ellipse cx="154" cy="58" rx="6" ry="9" fill="#ffa21f"/></g>';
+  if(d)s+='<polygon class="gl" points="150,22 158,44 182,38 166,58 184,76 160,70 150,92 140,70 116,76 134,58 118,38 142,44" fill="#ffd54a" stroke="#e8590c" stroke-width="2"/>';
+  return s},
+ obs:'تتصاعد فقاعات غاز من سطح الماغنسيوم، وعند تقريب شظية مشتعلة من فوهة الأنبوب يشتعل الغاز بفرقعة.',
+ con:'الغاز المتصاعد هو الهيدروجين، لأن الفلز يسبق الهيدروجين في المتسلسلة فيحل محله في الحمض: إحلال بسيط ويتكون ملح الحمض (MgCl₂).',
+ q:t=>/HCl|الأحماض|هيدروجين الحمض/.test(t)&&/ماغنسيوم|الفلزات/.test(t)},
+{n:'اتحاد الصوف الفولاذي (الحديد) مع الأكسجين',ic:'🔩',eq:['3Fe + 2O₂ →(Δ) Fe₃O₄'],
+ it:[{id:'lt',l:'🔥 ولاعة'},{id:'sw',l:'🧽 صوف فولاذي'},{id:'gl',l:'🔲 قطعة زجاج',bad:'الزجاج لا يحترق في اللهب. المطلوب فلز يتحد مع أكسجين الهواء.'},{id:'wt',l:'💧 ماء',bad:'الماء ليس من مواد هذا التفاعل، والمطلوب فلز + أكسجين + حرارة.'}],
+ z:[{id:'burner',x:112,y:168,w:76,h:46,l:'الموقد'},{id:'flame',x:108,y:50,w:84,h:114,l:'منطقة اللهب'}],
+ s:[{i:'lt',z:'burner',t:'أشعل موقد بنزن بالولاعة.',zh:'الولاعة تُقرَّب من فوهة الموقد.',ok:'اشتعل اللهب الأزرق 🔥',lit:1},{i:'sw',z:'flame',t:'سخّن قطعة الصوف الفولاذي بالملقط في اللهب.',zh:'الصوف يوضع في اللهب نفسه.',ok:'توهج الصوف الفولاذي وتطاير منه الشرر!'}],
+ sc:(p,d,l)=>{let s=BN+BRN(150,l,.9)+'<ellipse cx="245" cy="206" rx="34" ry="6" fill="#dbeafe" stroke="#6f7f9c" stroke-width="2"/>';
+  if(p>=2){s+='<line x1="150" y1="14" x2="150" y2="104" stroke="#555" stroke-width="5" stroke-linecap="round"/>';
+    s+=d?'<ellipse cx="150" cy="104" rx="16" ry="9" fill="#2b2f36"/><path d="M220 205Q245 180 270 205Z" fill="#2b2f36"/>':'<ellipse cx="150" cy="104" rx="16" ry="9" fill="#8a8f98" stroke="#555"/><circle class="gl" cx="136" cy="96" r="3" fill="#ff9800"/><circle class="gl" cx="165" cy="92" r="3.5" fill="#ffc107"/><circle class="gl" cx="150" cy="86" r="3" fill="#ff5722"/><circle class="gl" cx="170" cy="106" r="2.5" fill="#ff9800"/><circle class="gl" cx="130" cy="108" r="2.5" fill="#ffc107"/>'}
+  return s},
+ obs:'يتوهج الصوف الفولاذي ويتطاير منه شرر، ويتحول إلى مادة سوداء هي أكسيد الحديد المغناطيسي.',
+ con:'اتحد الحديد مباشرة مع الأكسجين (تفاعل اتحاد مباشر) فتكوّن Fe₃O₄، وتزداد كتلة الناتج عن كتلة الصوف الأصلية لاتحاد الأكسجين به.',
+ q:t=>/الصوف الفولاذي/.test(t)},
+{n:'تحلل كربونات الكالسيوم بالحرارة',ic:'🪨',eq:['CaCO₃ →(Δ) CaO + CO₂↑','CO₂ + Ca(OH)₂ → CaCO₃↓ + H₂O'],
+ it:[{id:'cc',l:'🪨 كربونات كالسيوم'},{id:'tb',l:'🧪 أنبوب توصيل'},{id:'lt',l:'🔥 ولاعة'},{id:'nc',l:'🧂 كلوريد صوديوم',bad:'كلوريد الصوديوم لا ينحل بالتسخين العادي. المطلوب كربونات الكالسيوم.'},{id:'wt',l:'💧 ماء مقطر',bad:'الماء لا ينحل بالتسخين ولا يعطي CO₂.'}],
+ z:[{id:'tube',x:34,y:56,w:132,h:54,l:'أنبوب اختبار'},{id:'burner',x:46,y:150,w:60,h:64,l:'الموقد'}],
+ s:[{i:'cc',z:'tube',t:'ضع مسحوق كربونات الكالسيوم في أنبوب الاختبار.',zh:'المادة توضع داخل أنبوب الاختبار.',ok:'تم وضع كربونات الكالسيوم في الأنبوب.'},
+    {i:'tb',z:'tube',t:'ركّب أنبوب التوصيل بين أنبوب الاختبار وماء الجير.',zh:'الأنبوب يُركَّب في سدادة الأنبوب.',ok:'تم توصيل الجهاز بماء الجير.'},
+    {i:'lt',z:'burner',t:'أشعل الموقد لتسخين الأنبوب.',zh:'الولاعة تُقرَّب من فوهة الموقد.',ok:'بدأ التسخين فانحلّت الكربونات وتصاعد غاز CO₂ إلى ماء الجير!',lit:1}],
+ sc:(p,d,l)=>{let s=BN+BRN(76,l,.68);
+  if(p>=1)s+='<rect x="44" y="92" width="50" height="10" rx="3" fill="#fff" stroke="#cfd6e4"/>';
+  s+='<path d="M150 70H52Q38 70 38 86Q38 102 52 102H150" fill="none" '+GL+'/>';
+  if(p>=2)s+='<rect x="150" y="68" width="12" height="36" rx="3" fill="#b4691f"/><path d="M162 86H240V172" fill="none" stroke="#9aa6b8" stroke-width="5" stroke-linejoin="round"/>';
+  s+='<path d="M207 130H263V195Q263 205 235 205Q207 205 207 195Z" fill="#dff1fb" opacity=".8"/>';
+  if(p>=3)s+=fade('<path d="M207 130H263V195Q263 205 235 205Q207 205 207 195Z" fill="#f3f1e6"/>',1,d,.8,.95)+bub(236,170,4);
+  s+='<path d="M205 105V195Q205 207 235 207Q265 207 265 195V105" fill="none" '+GL+'/>';
+  return s},
+ obs:'يتصاعد غاز من الأنبوب المسخّن فيتعكر ماء الجير الرائق، ويتبقى مسحوق أبيض هو أكسيد الكالسيوم.',
+ con:'انحلت كربونات الكالسيوم بالحرارة إلى أكسيد الكالسيوم وثاني أكسيد الكربون (تفاعل انحلال حراري). ويُرفع أنبوب التوصيل من ماء الجير قبل إطفاء الموقد حتى لا يرتد الماء.',
+ q:t=>/كربونات الكالسيوم/.test(t)&&!/الصوديوم/.test(t)},
+{n:'تحلل أكسيد الزئبق II بالحرارة',ic:'🔴',eq:['2HgO →(Δ) 2Hg + O₂↑'],
+ it:[{id:'hg',l:'🔴 أكسيد زئبق II'},{id:'lt',l:'🔥 ولاعة'},{id:'sp',l:'✨ شظية متوهجة'},{id:'cu',l:'⚫ أكسيد نحاس II',bad:'أكسيد النحاس II أسود ولا ينحل بسهولة بالتسخين. المطلوب أكسيد الزئبق الأحمر.'},{id:'wt',l:'💧 ماء',bad:'الماء لا علاقة له بهذا الانحلال الحراري.'}],
+ z:[{id:'tube',x:34,y:56,w:132,h:54,l:'أنبوب اختبار'},{id:'burner',x:46,y:150,w:60,h:64,l:'الموقد'},{id:'mouth',x:166,y:40,w:96,h:72,l:'فوهة الأنبوب'}],
+ s:[{i:'hg',z:'tube',t:'ضع مسحوق أكسيد الزئبق الأحمر في أنبوب الاختبار.',zh:'المادة توضع داخل أنبوب الاختبار.',ok:'تم وضع المسحوق الأحمر في الأنبوب.'},
+    {i:'lt',z:'burner',t:'أشعل الموقد لتسخين الأنبوب.',zh:'الولاعة تُقرَّب من فوهة الموقد.',ok:'بدأ التسخين وظهرت قطرات فضية على جدار الأنبوب.',lit:1},
+    {i:'sp',z:'mouth',t:'قرّب شظية متوهجة من فوهة الأنبوب للكشف عن الغاز.',zh:'الشظية تُقرَّب من فوهة الأنبوب.',ok:'اشتعلت الشظية المتوهجة بشدة: الغاز أكسجين!'}],
+ sc:(p,d,l)=>{let s=BN+BRN(76,l,.68);
+  if(p>=1)s+='<rect x="44" y="92" width="50" height="10" rx="3" fill="#c62828"/>';
+  if(p>=2)s+=fade('<circle cx="100" cy="94" r="2.5" fill="#cfd8dc" stroke="#78909c"/><circle cx="116" cy="97" r="3" fill="#cfd8dc" stroke="#78909c"/><circle cx="132" cy="95" r="2.5" fill="#cfd8dc" stroke="#78909c"/>',1,0,0);
+  s+='<path d="M150 70H52Q38 70 38 86Q38 102 52 102H150" fill="none" '+GL+'/>';
+  if(p>=3)s+='<line x1="240" y1="22" x2="176" y2="72" stroke="#8b5a2b" stroke-width="4" stroke-linecap="round"/>'+(d?'<g class="fk"><ellipse cx="172" cy="68" rx="9" ry="13" fill="#ffd54a"/></g><circle class="gl" cx="172" cy="68" r="22" fill="#fff"/>':'<circle cx="174" cy="70" r="5" fill="#ff7043"/>');
+  return s},
+ obs:'يتحول المسحوق الأحمر إلى قطرات فضية لامعة (الزئبق) على جدار الأنبوب، وتشتعل الشظية المتوهجة عند فوهته.',
+ con:'انحل أكسيد الزئبق II بالحرارة إلى زئبق فضي وغاز الأكسجين الذي يشعل الشظية المتوهجة (تفاعل انحلال حراري). الزئبق سام، فالتجربة تُجرى في شفاط أمام المعلم.',
+ q:t=>/أكسيد الزئبق|HgO/.test(t)},
+{n:'تفاعل التعادل: NaOH مع HCl باليونيفرسال',ic:'⚖️',eq:['NaOH + HCl → NaCl + H₂O'],
+ it:[{id:'ind',l:'🌈 دليل اليونيفرسال'},{id:'hcl',l:'🧴 حمض HCl'},{id:'wt',l:'💧 ماء مقطر',bad:'الماء يخفف القلوي فقط ولا يعادله. المطلوب حمض.'}],
+ z:[{id:'bk',x:80,y:64,w:140,h:146,l:'كأس NaOH القلوية'}],
+ s:[{i:'ind',z:'bk',t:'أضف دليل اليونيفرسال إلى محلول NaOH.',zh:'الدليل يضاف داخل الكأس.',ok:'أصبح المحلول بنفسجياً: وسط قلوي قوي.'},
+    {i:'hcl',z:'bk',t:'أضف حمض HCl بالتدريج.',zh:'الحمض يضاف داخل الكأس.',ok:'تحول اللون إلى الأزرق: قلت القلوية.'},
+    {i:'hcl',z:'bk',t:'أضف المزيد من الحمض حتى يصبح اللون أخضر.',zh:'الحمض يضاف داخل الكأس.',ok:'اللون أخضر: وصلنا إلى نقطة التعادل (pH = 7)!'}],
+ sc:(p,d)=>bk(BN+cl(88,118,124,86,['#e6f2fa','#7b1fa2','#3949ab','#43a047'],p,d)),
+ obs:'يتحول لون الدليل من البنفسجي (قلوي) إلى الأزرق ثم الأخضر عند نقطة التعادل.',
+ con:'الأخضر هو لون اليونيفرسال عند التعادل (pH = 7). تفاعل التعادل بين قلوي وحمض ينتج ملحاً (NaCl) وماء، وهو إحلال مزدوج. زيادة الحمض بعد ذلك تُظهر اللون البرتقالي ثم الأحمر.',
+ q:t=>/NaOH|هيدروكسيد الصوديوم/.test(t)&&/HCl|الهيدروكلوريك/.test(t)},
+{n:'دليل اليونيفرسال في الحمض والماء والقلوي',ic:'🌈',eqn:'ملحوظة: (المعادلات للاطلاع فقط وغير مقررة)',eq:['HCl → H⁺ + Cl⁻','NaOH → Na⁺ + OH⁻'],
+ it:[{id:'ind',l:'🌈 دليل اليونيفرسال'},{id:'ls',l:'📄 ورقة دوار الشمس',bad:'دوار الشمس يعطي لونين فقط (أحمر/أزرق). المطلوب دليل اليونيفرسال الذي يعطي تدرجاً لونياً.'}],
+ z:[{id:'a',x:36,y:84,w:64,h:126,l:'حمض HCl'},{id:'b',x:118,y:84,w:64,h:126,l:'ماء مقطر'},{id:'c',x:202,y:84,w:64,h:126,l:'قلوي NaOH'}],
+ s:[0,1,2].map(()=>({i:'ind',zs:['a','b','c'],t:'أضف قطرات من الدليل إلى أنبوب لم يُختبر بعد.',zh:'الدليل يضاف إلى أحد الأنابيب الثلاثة، ولا يكرر على نفس الأنبوب.',ok:'ظهر لون الدليل في الأنبوب.'})),
+ sc:(p,d,l,st)=>{const u=(st&&st.u)||{},C={a:'#e53935',b:'#43a047',c:'#7b1fa2'};let s=BN;
+  [['a',40],['b',122],['c',206]].forEach(([k,x])=>{s+='<path d="M'+(x+2)+' 120H'+(x+54)+'V190Q'+(x+54)+' 202 '+(x+28)+' 202Q'+(x+2)+' 202 '+(x+2)+' 190Z" fill="'+(u[k]?C[k]:'#e6f2fa')+'" opacity=".85"/><path d="M'+x+' 90V190Q'+x+' 204 '+(x+28)+' 204Q'+(x+56)+' 204 '+(x+56)+' 190V90" fill="none" '+GL+'/>'});
+  return s},
+ obs:'يتحول الدليل إلى الأحمر في الحمض، وإلى الأخضر في الماء المتعادل، وإلى البنفسجي في القلوي.',
+ con:'دليل اليونيفرسال يعطي تدرجاً لونياً حسب pH: الأحمر للحمضي القوي، والأخضر للمتعادل (pH = 7)، والبنفسجي للقلوي القوي.',
+ q:t=>/اليونيفرسال/.test(t)},
+{n:'تفاعل الصوديوم مع الماء',ic:'💥',eq:['2Na + 2H₂O → 2NaOH + H₂↑ + حرارة'],
+ it:[{id:'ind',l:'🌈 دليل اليونيفرسال'},{id:'na',l:'⚪ قطعة صغيرة من الصوديوم'},{id:'cu',l:'🟫 قطعة نحاس',bad:'النحاس لا يتفاعل مع الماء لأنه يلي الهيدروجين في المتسلسلة.'},{id:'fe',l:'🔩 مسمار حديد',bad:'الحديد لا يتفاعل مع الماء البارد، فهو أقل نشاطاً بكثير من الصوديوم.'}],
+ z:[{id:'tr',x:46,y:104,w:208,h:106,l:'حوض به ماء'}],
+ s:[{i:'ind',z:'tr',t:'أضف دليل اليونيفرسال إلى الماء أولاً لنكشف طبيعة الناتج.',zh:'الدليل يضاف إلى ماء الحوض.',ok:'لون الدليل أخضر: الماء متعادل.'},
+    {i:'na',z:'tr',t:'ألقِ قطعة صغيرة جداً من الصوديوم في الحوض.',zh:'الصوديوم يلقى في حوض الماء.',ok:'الصوديوم يطفو ويتحرك بسرعة ويتصاعد الغاز!'}],
+ sc:(p,d)=>{let s=BN+cl(52,140,196,64,['#d8ecf8','#43a047','#7b1fa2'],p,d,.6);
+  s+='<path d="M50 120V190Q50 206 66 206H234Q250 206 250 190V120" fill="none" '+GL+' stroke-linecap="round"/>';
+  if(p>=2&&!d)s+='<g class="mv"><circle cx="150" cy="138" r="7" fill="#d5d9e0" stroke="#8b94a3"/><circle class="gl" cx="150" cy="132" r="4" fill="#ffb300"/></g>'+bub(120,150,6)+bub(185,160,6);if(d)s+=EXPL;
+  return s},
+ obs:'يطفو الصوديوم ويتحرك بسرعة على سطح الماء مع فقاعات غاز وحرارة، ويتحول لون الدليل إلى البنفسجي، وفي النهاية يحدث انفجار صغير بفرقعة لأن الهيدروجين المتصاعد يشتعل مع الحرارة الشديدة، ولذلك تُستخدم قطعة صغيرة جدًا.',
+ con:'الصوديوم أخف من الماء فيطفو، ويحل محل هيدروجين الماء فيتصاعد الهيدروجين ويتكون NaOH القلوي (بنفسجي مع الدليل). التفاعل طارد للحرارة وشديد، ولا يُستخدم الماء لإطفاء حرائقه.',
+ q:t=>/الصوديوم/.test(t)&&/الماء|حوض/.test(t)&&!/كربونات|كلوريد|نترات|هيدروكسيد|الماغنسيوم|البوتاسيوم/.test(t)},
+{n:'المحول الحفزي في عادم السيارة',ic:'🚗',eqn:'ملحوظة: (المعادلات للاطلاع فقط وغير مقررة)',eq:['2CO + O₂ →(Pt, Pd, Rh) 2CO₂','2NO + 2CO →(Pt, Pd, Rh) N₂ + 2CO₂'],
+ it:[{id:'fu',l:'⛽ وقود (بنزين)'},{id:'sk',l:'⚡ شرارة التشغيل'},{id:'cat',l:'🟨 المحول الحفزي (Pt, Pd, Rh)'}],
+ z:[{id:'en',x:6,y:72,w:84,h:92,l:'المحرك'},{id:'pp',x:92,y:62,w:204,h:116,l:'ماسورة العادم (مكان تركيب المحول)'}],
+ s:[{i:'fu',z:'en',t:'ضع الوقود في المحرك.',zh:'الوقود يوضع في المحرك.',ok:'دخل الوقود إلى المحرك.'},
+    {i:'sk',z:'en',t:'أعطِ المحرك شرارة التشغيل لحرق الوقود.',zh:'الشرارة تُعطى للمحرك.',ok:'احترق الوقود وخرجت غازات ضارة (CO وأكاسيد النيتروجين) من العادم إلى الهواء!'},
+    {i:'cat',z:'pp',t:'ركّب المحول الحفزي في ماسورة العادم لمعالجة الغازات.',zh:'المحول يُركَّب في ماسورة العادم.',ok:'مرّت الغازات على المحول فتحولت CO إلى CO₂ وأكاسيد النيتروجين إلى N₂ فقط!'}],
+ sc:(p,d)=>{const pt=(x,t,c,dl)=>'<g class="pt" style="animation-delay:'+dl+'s"><g transform="translate('+x+' 120)"><circle r="9" fill="'+c+'"/><text text-anchor="middle" y="3" font-size="8" font-weight="700" fill="#fff" font-family="Arial">'+t+'</text></g></g>';
+  let s=BN+'<rect x="8" y="88" width="78" height="72" rx="8" fill="#6b7280"/><rect x="18" y="76" width="22" height="14" fill="#4b5563"/><rect x="50" y="76" width="22" height="14" fill="#4b5563"/><rect x="86" y="112" width="204" height="16" fill="#9ca3af"/>';
+  if(p>=1)s+='<rect x="26" y="108" width="40" height="34" rx="5" fill="#e0a100"/>';
+  if(p==2)s+='<rect x="136" y="94" width="60" height="52" rx="8" fill="none" stroke="#e8590c" stroke-width="2.5" stroke-dasharray="6 4"/>';
+  if(p==2)[96,150,204,256].forEach((x,k)=>s+=pt(x,k%2?'NOx':'CO',k%2?'#6d4c41':'#b71c1c',k*.6));
+  if(p>=3){s+='<rect x="138" y="96" width="56" height="48" rx="7" fill="#c9a227" stroke="#8a6d00" stroke-width="2"/>';for(let k=0;k<5;k++)s+='<line x1="'+(148+k*10)+'" y1="100" x2="'+(148+k*10)+'" y2="140" stroke="#8a6d00"/>';
+    s+='<text x="166" y="90" text-anchor="middle" font-size="11" font-weight="700" fill="#14213d" font-family="Arial">Pt · Pd · Rh</text>'+pt(96,'CO','#b71c1c',0)+pt(96,'NOx','#6d4c41',1.2)+pt(204,'CO₂','#2e7d32',.6)+pt(256,'N₂','#1565c0',1.8)+pt(256,'CO₂','#2e7d32',1.2)}
+  return s},
+ obs:'قبل المحول يخرج من العادم غاز CO السام وأكاسيد النيتروجين NOx، وبعد المرور على المحول تخرج غازات أقل ضرراً: CO₂ و N₂.',
+ con:'يحتوي المحول على معادن نفيسة (Pt, Pd, Rh) تعمل كعامل حفاز: تحوّل CO إلى CO₂ (أكسدة) وتحوّل أكاسيد النيتروجين إلى غاز النيتروجين N₂ فقط (اختزال)، فيقل تلوث الهواء.',
+ q:t=>/المحول الحفزي|محول حفزي/.test(t)},
+{n:'أجهزة غسل الغازات الحامضية بالمصانع',ic:'🏭',eqn:'ملحوظة: (المعادلات للاطلاع فقط وغير مقررة)',eq:['SO₂ + Ca(OH)₂ → CaSO₃↓ + H₂O','SO₂ + 2NaOH → Na₂SO₃ + H₂O'],
+ it:[{id:'fu',l:'🛢️ وقود يحتوي على كبريت'},{id:'al',l:'🧴 محلول قلوي (رذاذ)'}],
+ z:[{id:'fr',x:6,y:100,w:70,h:112,l:'فرن المصنع'},{id:'tw',x:132,y:22,w:80,h:188,l:'برج الغسل'}],
+ s:[{i:'fu',z:'fr',t:'احرق الوقود المحتوي على الكبريت في فرن المصنع.',zh:'الوقود يوضع في فرن المصنع.',ok:'احترق الوقود وتصاعد غاز SO₂ الحامضي السام إلى الهواء!'},
+    {i:'al',z:'tw',t:'رشّ المحلول القلوي في برج الغسل لمعادلة الغاز الحامضي.',zh:'المحلول القلوي يُرش داخل برج الغسل.',ok:'تعادل الغاز الحامضي مع القلوي وترسّب على هيئة ملح آمن في قاع البرج!'}],
+ sc:(p,d)=>{const gp=(x,y,dl)=>'<g class="up" style="animation-delay:'+dl+'s"><g transform="translate('+x+' '+y+')"><circle r="8" fill="#a1887f"/><text text-anchor="middle" y="3" font-size="7" font-weight="700" fill="#fff" font-family="Arial">SO₂</text></g></g>';
+  let s=BN+'<rect x="8" y="150" width="62" height="60" fill="#78909c"/><rect x="44" y="100" width="14" height="50" fill="#607d8b"/><rect x="70" y="180" width="66" height="12" fill="#9ca3af"/><rect x="138" y="30" width="68" height="176" rx="8" fill="#eef3f8" stroke="#6f7f9c" stroke-width="3"/>';
+  if(p>=1&&p<2)s+=gp(51,96,0)+gp(51,96,1.1)+gp(100,186,.4)+gp(160,170,.2)+gp(185,140,.9)+gp(165,100,1.4)+gp(180,40,.6)+gp(172,18,1);
+  if(p>=2){s+='<rect x="141" y="188" width="62" height="16" fill="#8ec9f0" opacity=".8"/>'+fade('<path d="M150 188 L160 176 L172 188 L184 178 L194 188Z" fill="#fff" stroke="#b0bec5"/>',1,d,1)+'<rect x="164" y="30" width="16" height="10" fill="#4b5563"/>';
+    [150,172,194].forEach((x,k)=>s+='<circle class="dr" style="animation-delay:'+k*.3+'s" cx="'+x+'" cy="48" r="3.5" fill="#42a5f5"/>')}
+  return s},
+ obs:'قبل الرش يخرج الغاز الحامضي SO₂ من المدخنة، وبعد رش المحلول القلوي في البرج لا يخرج الغاز ويترسب ملح أبيض في القاع.',
+ con:'أجهزة الغسل تعتمد على تفاعل تعادل بين الغاز الحامضي (SO₂) والمحلول القلوي، فيتحول إلى ملح آمن يترسب (CaSO₃) وماء، فيقل التلوث والأمطار الحامضية.',
+ q:t=>/أجهزة غسل|غسل الغازات|الغازات الحمضية|الغازات الحامضية|محاليل قلوية/.test(t)},
+{n:'أثر التدخين على الرئتين والمجاري الهوائية',ic:'🚬',eqt:'ارتباط أول أكسيد الكربون بالهيموجلوبين في الدم:',eq:['Hb + CO → HbCO'],
+ it:[{id:'cg',l:'🚬 سيجارة مشتعلة'},{id:'yr',l:'⏳ استمرار التدخين لسنوات'}],
+ z:[{id:'tr',x:126,y:6,w:48,h:84,l:'القصبة الهوائية'},{id:'lg',x:34,y:94,w:232,h:118,l:'الرئتان والحويصلات'}],
+ s:[{i:'cg',z:'tr',t:'مرّر دخان السيجارة عبر القصبة الهوائية.',zh:'الدخان يدخل من القصبة الهوائية.',ok:'دخل الدخان وترسب القطران الأسود على جدران المجاري الهوائية.'},
+    {i:'yr',z:'lg',t:'استمر في التدخين لسنوات وراقب الرئتين.',zh:'أثر السنوات يظهر على الرئتين.',ok:'تغير لون الرئتين إلى الداكن وتمزقت جدر الحويصلات الهوائية (نفاخ رئوي)!'}],
+ sc:(p,d)=>{const C=['#f4a6b0','#eb98a2','#4a3b3b'],an=(a,b)=>(p&&!d&&p<=2)?'<animate attributeName="fill" from="'+a+'" to="'+b+'" dur="2.4s" fill="freeze"/>':'';
+  const lc=C[Math.min(p,2)],pc=C[Math.max(p-1,0)];
+  let s='<path d="M150 84Q122 94 96 116M150 84Q178 94 204 116" stroke="#b36b6b" stroke-width="8" fill="none" stroke-linecap="round"/><rect x="144" y="14" width="12" height="72" rx="5" fill="#f2c4c4" stroke="#b36b6b"/>';
+  s+='<path d="M40 130Q40 90 90 92Q138 96 138 150Q138 205 90 205Q40 205 40 130Z" fill="'+lc+'" stroke="#b36b6b" stroke-width="2.5">'+an(pc,lc)+'</path><path d="M260 130Q260 90 210 92Q162 96 162 150Q162 205 210 205Q260 205 260 130Z" fill="'+lc+'" stroke="#b36b6b" stroke-width="2.5">'+an(pc,lc)+'</path>';
+  if(p<2){[60,74,88,102,116].forEach(x=>[132,146,160,174,188].forEach(y=>{s+='<circle cx="'+x+'" cy="'+y+'" r="5" fill="#fbd0d6" stroke="#c27a85"/><circle cx="'+(300-x)+'" cy="'+y+'" r="5" fill="#fbd0d6" stroke="#c27a85"/>'}))}
+  else s+='<circle cx="84" cy="150" r="20" fill="#1f1818" stroke="#000"/><circle cx="108" cy="182" r="14" fill="#1f1818" stroke="#000"/><circle cx="64" cy="184" r="9" fill="#1f1818"/><circle cx="216" cy="150" r="20" fill="#1f1818" stroke="#000"/><circle cx="192" cy="182" r="14" fill="#1f1818" stroke="#000"/><circle cx="236" cy="184" r="9" fill="#1f1818"/>';
+  if(p>=1){[[147,28],[153,42],[147,56],[153,70],[130,100],[170,100],[114,108],[186,108]].forEach(a=>s+='<circle cx="'+a[0]+'" cy="'+a[1]+'" r="2.6" fill="#111"/>');
+    if(p==1)s+='<g class="dn"><circle cx="150" cy="24" r="6" fill="#9e9e9e" opacity=".8"/></g><g class="dn" style="animation-delay:.9s"><circle cx="150" cy="24" r="5" fill="#bdbdbd" opacity=".8"/></g>'}
+  return s},
+ obs:'يترسب القطران الأسود على جدران القصبة والشعب الهوائية، وبعد سنوات يتحول لون الرئتين من الوردي إلى الداكن وتتمزق جدر الحويصلات الهوائية وتتحول إلى تجاويف كبيرة فتقل مساحة تبادل الغازات.',
+ con:'القطران يتلف المجاري الهوائية والحويصلات (النفاخ الرئوي)، وأول أكسيد الكربون يرتبط بالهيموجلوبين أسرع من الأكسجين فيقل الأكسجين الواصل للخلايا، والنيكوتين يسبب الإدمان، والبولونيوم 210 المشع يتلف DNA ويزيد خطر السرطان.',
+ mx:14,q:t=>/الرئة|الرئتين|الرئتان|الحويصل|القطران|النفاخ|الهيموجلوبين|قطن/.test(t)}];
+let cur=null;
+function labHome(){app.replaceChildren();const r=h('div',null,'row');r.append(h('button','🏠 الصفحة الرئيسية',null,home));app.append(r);
+const c=h('div',null,'c');c.append(h('h2','🧪 المعمل التفاعلي','q'),h('div','اختر تجربة ونفّذها بنفسك: اسحب المادة أو الأداة وأسقطها على المكان الصحيح (أو اضغط عليها ثم اضغط المكان). راقب النتيجة وجاوب الأسئلة.','msg'));
+S.lab=S.lab||{};LBX.forEach((x,i)=>c.append(h('button',x.ic+' '+x.n+(S.lab[i]?' ✔':''),'big',()=>labRun(i))));app.append(c)}
+function zAt(e){return document.elementsFromPoint(e.clientX,e.clientY).find(n=>n.classList&&n.classList.contains('zn'))}
+function ansEl(t){const a=h('div',null,'ans');t.split('\n').forEach(l=>a.append(lineEl(l)));return a}
+function labRun(i,st){const x=LBX[i];st=st||{p:0,lit:0,d:0,busy:0,err:0,msg:'',ok:0,sel:null,hint:0};cur={i,st};app.replaceChildren();
+const r=h('div',null,'row');r.append(h('button','🏠 الرئيسية',null,home),h('button','🧪 التجارب',null,labHome),h('button','🔄 أعد التجربة',null,()=>labRun(i)));app.append(r);
+const c=h('div',null,'c');c.append(h('div',x.n,'q'));c.append(h('div',x.eqt||'⚖️ معادلة التفاعل موزونة:','msg'));
+x.eq.forEach(l=>c.append(eqEl(l)));if(x.eqn){const nt=h('div',x.eqn);nt.style.cssText='margin:8px 0;padding:8px 12px;border-radius:10px;background:#fff8e1;color:#8a5a00;border:1px dashed #e0a800;font-size:.9em;font-weight:700;text-align:center';c.append(nt)}
+const stg=h('div',null,'lst');stg.dir='ltr';stg.innerHTML='<svg viewBox="0 0 300 230" xmlns="http://www.w3.org/2000/svg">'+x.sc(st.p,st.d,st.lit,st)+'</svg>';
+x.z.forEach(z=>{const d=h('div',null,'zn');d.dataset.z=z.id;d.style.cssText='left:'+z.x/3+'%;top:'+z.y/2.3+'%;width:'+z.w/3+'%;height:'+z.h/2.3+'%';d.append(h('span',z.l));d.onclick=()=>{if(st.sel)act(st.sel,z.id)};stg.append(d)});c.append(stg);
+c.append(h('div','🧰 المواد والأدوات (بترتيب الاستخدام):','msg'));const tr=h('div',null,'tray');x.it.filter(a=>!a.bad&&x.s.some(q=>q.i==a.id)).sort((a,b)=>x.s.findIndex(q=>q.i==a.id)-x.s.findIndex(q=>q.i==b.id)).forEach((it,nn)=>{const cn=x.s.filter(q=>q.i==it.id).length,hs=1,lf=x.s.some((q,j)=>j>=st.p&&q.i==it.id),b=h('button',(nn+1)+'. '+it.l+(cn>1?' (×'+cn+')':''),'chip'+(hs&&!lf?' used':'')+(st.sel==it.id?' sel':''));if(!st.d&&!st.busy)drag(b,it.id,st,i);tr.append(b)});c.append(tr);
+c.append(h('div','الخطوات المنفذة: '+st.p+' / '+x.s.length+(st.err?'  •  أخطاء: '+st.err:''),'msg'));
+if(st.msg)c.append(h('div',st.msg,'msg '+(st.ok?'g':'e')));
+if(st.busy)c.append(h('div','⏳ التفاعل جارٍ... راقب ما يحدث.','msg'));
+if(!st.d&&!st.busy){if(st.hint&&x.s[st.p])c.append(h('div','💡 '+x.s[st.p].t,'ans'));else c.append(h('button','💡 تلميح',null,()=>{st.hint=1;labRun(i,st)}))}
+app.append(c);
+if(st.d){const o=h('div',null,'c');o.append(h('div','📋 الملاحظة','q'),h('div',x.obs,'ans'),h('div','🎯 الاستنتاج','q'),h('div',x.con,'ans'));
+o.append(h('div',st.err?'أنهيت التجربة بعد '+st.err+' محاولة خاطئة، حاول إعادتها بدون أخطاء ⭐':'⭐ ممتاز! نفذت التجربة بدون أي خطأ','msg g'));app.append(o);
+const seen={},Q=[];E.forEach(e=>{if(typeof e[1]!='string'||e.t=='المصطلح العلمي'||!x.q(e[0]))return;const k=e[1].split('\n')[0];if(seen[k])return;seen[k]=1;Q.push(e)});
+const pr=e=>(k=>k<0?9:k)(['علل','ماذا يحدث','متنوعة','أهمية','أكمل','صوب'].indexOf(e.t));Q.sort((a,b)=>pr(a)-pr(b));if(Q.length){const w=h('div',null,'c');w.append(h('div','❓ أهم أسئلة هذا التفاعل (علل / ماذا يحدث)','q'));Q.slice(0,x.mx||10).forEach((e,k)=>{const b=h('div',null,'lqb');(()=>{const qd=h('div',null,'q');qd.append(document.createTextNode((k+1)+') '),qEl(e[0],e.t));b.append(qd)})();const bt=h('button','👁️ اظهر الإجابة','pri',()=>{bt.replaceWith(ansEl(e[1]))});b.append(bt);w.append(b)});app.append(w)}
+if(i<LBX.length-1){const n=h('button','التجربة التالية ◀','big',()=>labRun(i+1));app.append(n)}}}
+function drag(b,id,st,i){b.onpointerdown=e=>{e.preventDefault();const sx=e.clientX,sy=e.clientY;let g=null;const zs=()=>document.querySelectorAll('.zn');
+const mv=ev=>{if(!g&&Math.hypot(ev.clientX-sx,ev.clientY-sy)>8){g=h('div',b.textContent,'ghost');document.body.append(g);zs().forEach(z=>z.classList.add('hl'))}
+if(g){g.style.left=ev.clientX+'px';g.style.top=ev.clientY+'px';const z=zAt(ev);zs().forEach(n=>n.classList.toggle('ov',n==z))}};
+const up=ev=>{removeEventListener('pointermove',mv);removeEventListener('pointerup',up);removeEventListener('pointercancel',up);
+if(g){const z=zAt(ev);g.remove();zs().forEach(n=>n.classList.remove('hl','ov'));act(id,z?z.dataset.z:null)}else{st.sel=st.sel==id?null:id;labRun(i,st)}};
+addEventListener('pointermove',mv);addEventListener('pointerup',up);addEventListener('pointercancel',up)}}
+function act(id,z){const {i,st}=cur,x=LBX[i];if(st.busy||st.d)return;st.sel=null;st.hint=0;
+const it=x.it.find(a=>a.id==id),k=x.s.findIndex((q,j)=>j>=st.p&&q.i==id),s=x.s[st.p];
+if(!z){st.msg='⚠️ أسقط ('+it.l+') فوق المربع المنقط المناسب.';st.ok=0}
+else if(it.bad){st.err++;st.msg='❌ '+it.bad;st.ok=0}
+else if(k<0){st.msg='ℹ️ استخدمت هذه المادة بالفعل.';st.ok=0}
+else if(k>st.p){st.err++;st.msg='❌ الترتيب غير صحيح! الخطوة المطلوبة الآن: '+s.t;st.ok=0}
+else if(s.zs?(!s.zs.includes(z)||(st.u&&st.u[z])):s.z!=z){st.err++;st.msg='❌ مكان خاطئ! '+s.zh;st.ok=0}
+else{if(s.zs){st.u=st.u||{};st.u[z]=1}st.p++;st.msg='✅ '+s.ok;st.ok=1;if(s.lit)st.lit=1;if(st.p==x.s.length){st.busy=1;setTimeout(()=>{st.busy=0;st.d=1;S.lab=S.lab||{};S.lab[i]=1;sv();if(cur.st===st)labRun(i,st)},2800)}}
+labRun(i,st)}
+function home(){app.replaceChildren();const c=h('div',null,'c');c.append(h('h2','اختار نوع الأسئلة 👇','q'));const dm=Object.keys(S.m.t).length;
+c.append(h('button','📝 أسئلة موضوعية: اختيار + صح/خطأ ('+M.length+' سؤال)'+(dm?' – كمّل من سؤال '+(S.m.i+1):''),'big',()=>mcq()));
+c.append(h('button','✍️ أسئلة مقالية بإجاباتها ('+E.length+' سؤال)','big',()=>ess()));
+c.append(h('button','🧪 المعمل التفاعلي: نفّذ التفاعلات بنفسك ('+LBX.length+' تجارب)','big',labHome));app.append(c)}
+
+home();
+</script></body></html>
